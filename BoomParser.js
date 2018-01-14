@@ -144,6 +144,30 @@ class WadParser {
 		this.sectors = out;
 		return out;
 	}
+
+	getTextures(file) {
+		if (this.textures) return this.textures;
+
+		/*
+		Bytes 0-1: Texture x offset (short)
+		Bytes 0-3: Texture y offset (short)
+		Bytes 4-11: Upper texture name (8 byte string)
+		Bytes 12-19: Lower texture name (8 byte string)
+		Bytes 20-27: Middle texture name (8 byte string)
+		Bytes 28-29: Sector id (short)
+		*/
+
+		const buffer = fs.readFileSync(file);
+		const out = [];
+
+		for (let i = 4; i < buffer.length; i += 8) {
+			let j = i ;
+
+			out.push(String.fromCharCode(buffer.readUInt8(j++), buffer.readUInt8(j++), buffer.readUInt8(j++), buffer.readUInt8(j++), buffer.readUInt8(j++), buffer.readUInt8(j++)).replace(/\u0000/g, ''));
+		}
+		this.textures = out;
+		return out;
+	}
 }
 
 module.exports = new WadParser();
