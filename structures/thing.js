@@ -4,7 +4,7 @@
 class Thing {
 
 	constructor(_id, x, y, angle, type, flags, other = {}) {
-		this.id = _id;
+		this._id = _id;
 
 		this.x = x;
 		this.y = y;
@@ -21,6 +21,7 @@ class Thing {
 		let out = `thing//#${this.id}\n{\n`;
 
 		for (const key in this) {
+			if (key[0] === '_') continue;
 			out += `${key}=${this[key]};\n`;
 		}
 

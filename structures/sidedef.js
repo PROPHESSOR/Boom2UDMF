@@ -4,7 +4,7 @@
 class Sidedef {
 
 	constructor(_id, offsetx, offsety, uppertex, lowertex, middletex, sector, other = {}) {
-		this.id = _id;
+		this._id = _id;
 
 		this.offsetx = offsetx;
 		this.offsety = offsety;
@@ -22,6 +22,7 @@ class Sidedef {
 		let out = `sidedef//#${this.id}\n{\n`;
 
 		for (const key in this) {
+			if (key[0] === '_') continue;
 			out += `${key}=${this[key]};\n`;
 		}
 

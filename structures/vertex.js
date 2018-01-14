@@ -16,6 +16,7 @@ class Vertex {
 		let out = `vertex//#${this._id}\n{\n`;
 
 		for (const key in this) {
+			if (key[0] === '_') continue;
 			out += `${key}=${this[key]};\n`;
 		}
 

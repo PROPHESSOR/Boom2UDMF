@@ -16,11 +16,11 @@ class Linedef {
 	 * @param  {object} other - Other attributes
 	 */
 	constructor(_id, v1, v2, flag, special, sector, front, back, other = {}) {
-		this.id = _id;
+		this._id = _id;
 
 		this.v1 = Number(v1);
 		this.v2 = Number(v2);
-		
+
 		this.special = Number(special);
 
 		Object.assign(this, other);
@@ -32,6 +32,7 @@ class Linedef {
 		let out = `linedef//#${this.id}\n{\n`;
 
 		for (const key in this) {
+			if (key[0] === '_') continue;
 			out += `${key}=${this[key]};\n`;
 		}
 
