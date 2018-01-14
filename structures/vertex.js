@@ -13,7 +13,7 @@ class Vertex {
 	}
 
 	toString() {
-		let out = `sidedef//#${this.id}\n{\n`;
+		let out = `vertex//#${this._id}\n{\n`;
 
 		for (const key in this) {
 			out += `${key}=${this[key]};\n`;
