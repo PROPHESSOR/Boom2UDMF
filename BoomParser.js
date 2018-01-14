@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2018 PROPHESSOR
+ */
+
 'use strict';
 
 const fs = require('fs');
@@ -101,10 +105,10 @@ class WadParser {
 			let j = i;
 
 			out.push({
-				'floor': buffer.readInt16LE(j),
-				'height': buffer.readInt16LE(j += 2),
-				'floortex': buffer.readInt32LE(j += 8),
-				'ceiltex': buffer.readInt32LE(j += 8),
+				'floor': buffer.readUInt8(j),
+				'height': buffer.readUInt8(j += 2),
+				'floortex': buffer.toString('ascii', j + 1, (j += 8) + 1).replace(/[\0\10]/g, ''),
+				'ceiltex': buffer.toString('ascii', j + 1, (j += 8) + 1).replace(/[\0\10]/g, ''),
 				'light': buffer.readInt16LE(j += 2),
 				'special': buffer.readInt16LE(j += 2),
 				'tag': buffer.readInt16LE(j += 2)
@@ -132,40 +136,17 @@ class WadParser {
 		for (let i = 0; i < buffer.length; i += 30) {
 			let j = i;
 
+
 			out.push({
 				'offsetx': buffer.readInt16LE(j),
 				'offsety': buffer.readInt16LE(j += 2),
-				'uppertex': buffer.readInt32LE(j += 8),
-				'lowertex': buffer.readInt32LE(j += 8),
-				'middletex': buffer.readInt32LE(j += 8),
+				'uppertex': buffer.toString('ascii', j + 1, (j += 8) + 1).replace(/[\0\10]/g, ''),
+				'lowertex': buffer.toString('ascii', j + 1, (j += 8) + 1).replace(/[\0\10]/g, ''),
+				'middletex': buffer.toString('ascii', j + 1, (j += 8) + 1).replace(/[\0\10]/g, ''),
 				'sector': buffer.readInt16LE(j += 2)
 			});
 		}
 		this.sectors = out;
-		return out;
-	}
-
-	getTextures(file) {
-		if (this.textures) return this.textures;
-
-		/*
-		Bytes 0-1: Texture x offset (short)
-		Bytes 0-3: Texture y offset (short)
-		Bytes 4-11: Upper texture name (8 byte string)
-		Bytes 12-19: Lower texture name (8 byte string)
-		Bytes 20-27: Middle texture name (8 byte string)
-		Bytes 28-29: Sector id (short)
-		*/
-
-		const buffer = fs.readFileSync(file);
-		const out = [];
-
-		for (let i = 4; i < buffer.length; i += 8) {
-			let j = i ;
-
-			out.push(String.fromCharCode(buffer.readUInt8(j++), buffer.readUInt8(j++), buffer.readUInt8(j++), buffer.readUInt8(j++), buffer.readUInt8(j++), buffer.readUInt8(j++)).replace(/\u0000/g, ''));
-		}
-		this.textures = out;
 		return out;
 	}
 }

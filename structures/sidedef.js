@@ -8,9 +8,9 @@ class Sidedef {
 
 		this.offsetx = offsetx;
 		this.offsety = offsety;
-		this.texturetop = uppertex;
-		this.texturebottom = lowertex;
-		this.texturemiddle = middletex;
+		this.texturetop = `"${uppertex}"`;
+		this.texturebottom = `"${lowertex}"`;
+		this.texturemiddle = `"${middletex}"`;
 		this.sector = sector;
 
 		Object.assign(this, other);
