@@ -6,8 +6,8 @@ class Vertex {
 	constructor(_id, x, y, other = {}) {
 		this._id = _id;
 
-		this.x = x;
-		this.y = y;
+		this.x = x.toFixed(1);
+		this.y = y.toFixed(1);
 
 		Object.assign(this, other);
 	}
