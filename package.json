@@ -1,0 +1,33 @@
+{
+  "name": "boom2udmf",
+  "version": "1.0.0",
+  "description": "Vanilla/Boom to UDMF converter",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PROPHESSOR/boom2udmf.git"
+  },
+  "keywords": [
+    "doom",
+    "UDMF",
+    "universal",
+    "doom",
+    "map",
+    "format",
+    "boom",
+    "vanilla",
+    "wad"
+  ],
+  "author": "PROPHESSOR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PROPHESSOR/boom2udmf/issues"
+  },
+  "homepage": "https://github.com/PROPHESSOR/boom2udmf#readme"
+}
