@@ -4,7 +4,7 @@
 class Thing {
 
 	constructor(_id, x, y, angle, type, flags, other = {}) {
-		this.id = id;
+		this.id = _id;
 
 		this.x = x;
 		this.y = y;

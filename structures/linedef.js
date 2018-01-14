@@ -16,7 +16,7 @@ class Linedef {
 	 * @param  {object} other - Other attributes
 	 */
 	constructor(_id, v1, v2, flag, special, sector, front, back, other = {}) {
-		this.id = id;
+		this.id = _id;
 
 		this.v1 = Number(v1);
 		this.v2 = Number(v2);
