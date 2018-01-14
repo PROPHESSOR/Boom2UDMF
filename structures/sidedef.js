@@ -19,7 +19,7 @@ class Sidedef {
 	toString() {
 		// const keys = ['v1', 'v2', 'sidefront', 'special', 'blocking', 'impact', 'repeatspecial', 'playeruse'];
 
-		let out = `sidedef//#${this.id}\n{\n`;
+		let out = `sidedef//#${this._id}\n{\n`;
 
 		for (const key in this) {
 			if (key[0] === '_') continue;

@@ -18,7 +18,7 @@ class Thing {
 	toString() {
 		// const keys = ['v1', 'v2', 'sidefront', 'special', 'blocking', 'impact', 'repeatspecial', 'playeruse'];
 
-		let out = `thing//#${this.id}\n{\n`;
+		let out = `thing//#${this._id}\n{\n`;
 
 		for (const key in this) {
 			if (key[0] === '_') continue;

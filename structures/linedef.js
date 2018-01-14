@@ -29,7 +29,7 @@ class Linedef {
 	toString() {
 		// const keys = ['v1', 'v2', 'sidefront', 'special', 'blocking', 'impact', 'repeatspecial', 'playeruse'];
 
-		let out = `linedef//#${this.id}\n{\n`;
+		let out = `linedef//#${this._id}\n{\n`;
 
 		for (const key in this) {
 			if (key[0] === '_') continue;
