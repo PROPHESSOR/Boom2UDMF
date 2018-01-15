@@ -108,8 +108,8 @@ class WadParser {
 			out.push({
 				'floor': buffer.readInt16LE(j),
 				'height': buffer.readInt16LE(j += 2),
-				'floortex': buffer.toString('ascii', j + 1, (j += 8) + 2).replace(/[\0\s\u0010]/g, ''),
-				'ceiltex': buffer.toString('ascii', j + 2, (j += 8) + 2).replace(/[\0\s\u0010]/g, ''),
+				'floortex': buffer.toString('ascii', j + 1, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
+				'ceiltex': buffer.toString('ascii', j + 2, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
 				'light': buffer.readInt16LE(j += 2),
 				'special': buffer.readInt16LE(j += 2),
 				'tag': buffer.readInt16LE(j += 2)
@@ -142,9 +142,9 @@ class WadParser {
 			out.push({
 				'offsetx': buffer.readInt16LE(j),
 				'offsety': buffer.readInt16LE(j += 2),
-				'uppertex': buffer.toString('ascii', j + 1, (j += 8) + 2).replace(/[\0\s\u0010]/g, ''),
-				'lowertex': buffer.toString('ascii', j + 2, (j += 8) + 2).replace(/[\0\s\u0010]/g, ''),
-				'middletex': buffer.toString('ascii', j + 2, (j += 8) + 2).replace(/[\0\s\u0010]/g, ''),
+				'uppertex': buffer.toString('ascii', j + 1, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
+				'lowertex': buffer.toString('ascii', j + 2, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
+				'middletex': buffer.toString('ascii', j + 2, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
 				'sector': buffer.readInt16LE(j += 2)
 			});
 		}
