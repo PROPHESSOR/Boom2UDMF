@@ -8,14 +8,14 @@ class Linedef {
 	 * @param  {number} _id=-1 - Linedef id
 	 * @param  {number} v1 - First vertex
 	 * @param  {number} v2 - Second vertex
-	 * @param  {number} flag - Flag
+	 * @param  {number} flags - Flag
 	 * @param  {number} special - Special
-	 * @param  {number} sector - Special
+	 * @param  {object} args - Arguments
 	 * @param  {number} front - SideDef ID
 	 * @param  {number} back - SideDef ID
 	 * @param  {object} other - Other attributes
 	 */
-	constructor(_id, v1, v2, flag, special, args = {}, front, back, other = {}) {
+	constructor(_id, v1, v2, flags, special, args = {}, front, back, other = {}) {
 		this._id = _id;
 
 		this.v1 = Number(v1);
@@ -29,9 +29,11 @@ class Linedef {
         this.arg3 = args.arg4 || 0;
         this.arg4 = args.arg5 || 0;
 
-		this.special = special;
+        this.special = Number(special);
 
-		this.special = Number(special);
+        for (const flag in flags) {
+            this[flag] = Boolean(flags[flag]);
+        }
 
 		Object.assign(this, other);
 	}

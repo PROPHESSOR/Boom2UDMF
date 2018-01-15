@@ -5,7 +5,7 @@
 
 'use strict';
 
-const {lineActionMap} = require('./config');
+const {lineActionMap, Constants} = require('./config');
 
 class BoomParser {}
 
@@ -19,7 +19,43 @@ BoomParser.Action = class {
 	}
 
 	get UDMFflags() {
-		return false; // TODO: Write me
+		const flag = this.otherData.flags || 0;
+		const {FLAGS} = Constants;
+
+		const flags = {
+			'blocking': flag & FLAGS.BLOCKING,
+			'blockmonsters': flag & FLAGS.BLOCKMONSTERS,
+			'twosided': flag & FLAGS.TWOSIDED,
+			'dontpegtop': flag & FLAGS.DONTPEGTOP,
+			'dontpegbottom': flag & FLAGS.DONTPEGBOTTOM,
+			'secret': flag & FLAGS.SECRET,
+			'blocksound': flag & FLAGS.SOUNDBLOCK,
+			'dontdraw': flag & FLAGS.DONTDRAW,
+			'mapped': flag & FLAGS.MAPPED,
+			'translucent': flag & FLAGS.TRANSLUCENT,
+			'passuse': flag & FLAGS.PASSUSE,
+			'jumpover': false,
+			'blockfloaters': flag & FLAGS.BLOCK_FLOATERS,
+			'playercross': flag & FLAGS.SPAC_PCross,
+			'playeruse': flag & FLAGS.SPAC_Use,
+			'monstercross': flag & FLAGS.SPAC_MCross,
+			'monsteruse': flag & FLAGS.SPAC_MCross,
+			'impact': flag & FLAGS.SPAC_Impact,
+			'playerpush': flag & FLAGS.SPAC_Push,
+			'monsterpush': flag & FLAGS.SPAC_MCross,
+			'missilecross': flag & FLAGS.SPAC_MCross,
+			'repeatspecial': flag & FLAGS.REPEAT_SPECIAL
+		};
+
+		if (this.actionMap.flags.includes('USE')) flags.playeruse = true;
+		if (this.actionMap.flags.includes('REP')) flags.repeatspecial = true;
+		if (this.actionMap.flags.includes('WALK')) flags.playercross = true;
+		if (this.actionMap.flags.includes('MONST')) flags.monsteruse = true;
+		if (this.actionMap.flags.includes('MONWALK')) flags.monstercross = true;
+		if (this.actionMap.flags.includes('SHOOT')) flags.missilecross = true;
+		if (this.actionMap.flags.includes('SHOOT')) flags.impact = true;
+
+		return flags;
 	}
 
 	get UDMFaction() {
