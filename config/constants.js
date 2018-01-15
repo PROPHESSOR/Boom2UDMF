@@ -11,6 +11,23 @@
 
 module.exports = {
 	"FLAGS": {
+		"Things": {
+			"EASY":	0x0001,
+			"MEDIUM":	0x0002,
+			"HARD":	0x0004,
+			"AMBUSH":	0x0008,
+			"DORMANT":	0x0010,
+			"FIGHTER":	0x0020,
+			"CLERIC":	0x0040,
+			"MAGE":	0x0080,
+			"SINGLE":	0x0100,
+			"COOPERATIVE":	0x0200,
+			"DEATHMATCH":	0x0400,
+			"SHADOW":	0x0800,
+			"ALTSHADOW":	0x1000,
+			"FRIENDLY":	0x2000,
+			"STANDSTILL":	0x4000
+		},
 		"BLOCKING":	0x0001,
 		"BLOCKMONSTERS":	0x0002,
 		"TWOSIDED":	0x0004,

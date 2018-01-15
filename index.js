@@ -61,7 +61,7 @@ function parseThings() {
 	for (const i in things) {
 		const thing = things[i];
 
-		out.push(new Thing(i, thing.x, thing.y, thing.angle, thing.tid, thing.flags));
+		out.push(new Thing(i, thing.x, thing.y, thing.angle, thing.tid, BoomParser.Thing.getUDMFflags(thing.flags)));
 	}
 
 	let outstring = '// Things\n';

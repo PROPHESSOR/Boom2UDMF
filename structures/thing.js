@@ -3,14 +3,17 @@
 
 class Thing {
 
-	constructor(_id, x, y, angle, type, flags, other = {}) {
+	constructor(_id, x, y, angle, type, flags = {}, other = {}) {
 		this._id = _id;
 
 		this.x = x;
 		this.y = y;
 		this.angle = angle;
 		this.type = type;
-		this.flags = flags;
+        
+        for (const flag in flags) {
+            this[flag] = Boolean(flags[flag]);
+        }
 
 		Object.assign(this, other);
 	}

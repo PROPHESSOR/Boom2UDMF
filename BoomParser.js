@@ -9,7 +9,34 @@ const {lineActionMap, Constants} = require('./config');
 
 class BoomParser {}
 
-BoomParser.FlagParser = class {}; // TODO: Write me
+BoomParser.Thing = class {
+	static getUDMFflags(flag) {
+		const {FLAGS} = Constants;
+
+		const flags = {
+			'skill1': flag & FLAGS.Things.EASY,
+			'skill2': flag & FLAGS.Things.EASY,
+			'skill3': flag & FLAGS.Things.MEDIUM,
+			'skill4': flag & FLAGS.Things.HARD,
+			'skill5': flag & FLAGS.Things.HARD,
+			'ambush': flag & FLAGS.Things.AMBUSH,
+			'single': flag & FLAGS.Things.SINGLE,
+			'dm': flag & FLAGS.Things.DEATHMATCH,
+			'coop': flag & FLAGS.Things.COOPERATIVE,
+			'friend': flag & FLAGS.Things.FRIENDLY,
+			'dormant': flag & FLAGS.Things.DORMANT,
+			'class1': flag & FLAGS.Things.FIGHTER,
+			'class2': flag & FLAGS.Things.CLERIC,
+			'class3': flag & FLAGS.Things.MAGE,
+			'standing': flag & FLAGS.Things.STANDSTILL,
+			'strifeally': false,
+			'translucent': false,
+			'invisible': false
+		};
+
+		return flags;
+	}
+}; // TODO: Write me
 
 BoomParser.Action = class {
 	constructor(boomAction, otherData = {}) {
