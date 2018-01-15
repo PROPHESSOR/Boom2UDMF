@@ -6,5 +6,6 @@ Configuration.Constants = require('./constants');
 Configuration.lineActionMap = require('./lineActionMap');
 Configuration.lineFlags = require('./lineFlagMap');
 Configuration.sectorSpecialMap = require('./sectorSpecialMap');
+Configuration.actionIDs = require('./lineActionsNameToNumber');
 
 module.exports = Configuration;

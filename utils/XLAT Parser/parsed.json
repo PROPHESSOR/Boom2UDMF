@@ -6,7 +6,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "0",
             16,
             150,
@@ -18,7 +18,7 @@
             "WALK"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "tag",
             16
         ]
@@ -28,7 +28,7 @@
             "WALK"
         ],
         "udmf": [
-            "Door_Close",
+            10,
             "tag",
             16
         ]
@@ -39,7 +39,7 @@
             "MONST"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "tag",
             16,
             150
@@ -50,7 +50,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_RaiseToLowestCeiling",
+            238,
             "tag",
             8
         ]
@@ -60,7 +60,7 @@
             "WALK"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseA",
+            196,
             "tag",
             16,
             16,
@@ -72,7 +72,7 @@
             "USE"
         ],
         "udmf": [
-            "Stairs_BuildUpDoom",
+            217,
             "tag",
             2,
             8
@@ -83,7 +83,7 @@
             "WALK"
         ],
         "udmf": [
-            "Stairs_BuildUpDoom",
+            217,
             "tag",
             2,
             8
@@ -94,7 +94,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_Donut",
+            250,
             "tag",
             4,
             4
@@ -106,7 +106,7 @@
             "MONST"
         ],
         "udmf": [
-            "Plat_DownWaitUpStayLip",
+            206,
             "tag",
             32,
             105,
@@ -118,7 +118,7 @@
             "USE"
         ],
         "udmf": [
-            "Exit_Normal",
+            243,
             "0"
         ]
     },
@@ -127,7 +127,7 @@
             "WALK"
         ],
         "udmf": [
-            "Light_MaxNeighbor",
+            234,
             "tag"
         ]
     },
@@ -136,7 +136,7 @@
             "WALK"
         ],
         "udmf": [
-            "Light_ChangeToValue",
+            112,
             "tag",
             255
         ]
@@ -146,7 +146,7 @@
             "USE"
         ],
         "udmf": [
-            "Plat_UpByValueStayTx",
+            230,
             "tag",
             8
         ]
@@ -156,7 +156,7 @@
             "USE"
         ],
         "udmf": [
-            "Plat_UpByValueStayTx",
+            230,
             "tag",
             8
         ]
@@ -166,7 +166,7 @@
             "WALK"
         ],
         "udmf": [
-            "Door_CloseWaitOpen",
+            249,
             "tag",
             16,
             240
@@ -177,7 +177,7 @@
             "WALK"
         ],
         "udmf": [
-            "Light_StrobeDoom",
+            232,
             "tag",
             5,
             35
@@ -188,7 +188,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_RaiseToNearest",
+            25,
             "tag",
             8
         ]
@@ -198,7 +198,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_LowerToHighest",
+            242,
             "tag",
             8,
             128
@@ -209,7 +209,7 @@
             "USE"
         ],
         "udmf": [
-            "Plat_RaiseAndStayTx0",
+            228,
             "tag",
             8
         ]
@@ -219,7 +219,7 @@
             "USE"
         ],
         "udmf": [
-            "Plat_DownWaitUpStayLip",
+            206,
             "tag",
             32,
             105
@@ -230,7 +230,7 @@
             "WALK"
         ],
         "udmf": [
-            "Plat_RaiseAndStayTx0",
+            228,
             "tag",
             8
         ]
@@ -240,7 +240,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_LowerToLowest",
+            21,
             "tag",
             8
         ]
@@ -250,7 +250,7 @@
             "SHOOT"
         ],
         "udmf": [
-            "Floor_RaiseToLowestCeiling",
+            238,
             "tag",
             8
         ]
@@ -260,7 +260,7 @@
             "WALK"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseA",
+            196,
             "tag",
             8,
             8,
@@ -273,7 +273,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "0",
             16,
             150,
@@ -287,7 +287,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "0",
             16,
             150,
@@ -301,7 +301,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "0",
             16,
             150,
@@ -314,7 +314,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "tag",
             16,
             150
@@ -325,7 +325,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_RaiseByTexture",
+            240,
             "tag",
             8
         ]
@@ -335,7 +335,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "0",
             16,
             "tag"
@@ -347,7 +347,7 @@
             "MONST"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "0",
             16,
             "0",
@@ -361,7 +361,7 @@
             "MONST"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "0",
             16,
             "0",
@@ -375,7 +375,7 @@
             "MONST"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "0",
             16,
             "0",
@@ -388,7 +388,7 @@
             "WALK"
         ],
         "udmf": [
-            "Light_ChangeToValue",
+            112,
             "tag",
             35
         ]
@@ -398,7 +398,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_LowerToHighest",
+            242,
             "tag",
             32,
             136
@@ -409,7 +409,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_LowerToLowestTxTy",
+            241,
             "tag",
             8
         ]
@@ -419,7 +419,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_LowerToLowest",
+            21,
             "tag",
             8
         ]
@@ -430,7 +430,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport",
+            70,
             "0",
             "tag"
         ]
@@ -440,7 +440,7 @@
             "WALK"
         ],
         "udmf": [
-            "Generic_Ceiling",
+            201,
             "tag",
             8,
             "0",
@@ -453,7 +453,7 @@
             "USE"
         ],
         "udmf": [
-            "Ceiling_LowerToFloor",
+            254,
             "tag",
             8
         ]
@@ -464,7 +464,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Close",
+            10,
             "tag",
             16
         ]
@@ -475,7 +475,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_LowerToFloor",
+            254,
             "tag",
             8
         ]
@@ -485,7 +485,7 @@
             "WALK"
         ],
         "udmf": [
-            "Ceiling_LowerAndCrush",
+            43,
             "tag",
             8,
             "0",
@@ -498,7 +498,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToHighest",
+            242,
             "tag",
             8,
             128
@@ -511,7 +511,7 @@
             "MONST"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "tag",
             16
         ]
@@ -521,7 +521,7 @@
             "SHOOT"
         ],
         "udmf": [
-            "Plat_RaiseAndStayTx0",
+            228,
             "tag",
             8
         ]
@@ -531,7 +531,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Left",
+            100,
             64
         ]
     },
@@ -540,7 +540,7 @@
             "USE"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseDist",
+            168,
             "tag",
             8,
             8,
@@ -552,7 +552,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_Close",
+            10,
             "tag",
             16
         ]
@@ -562,7 +562,7 @@
             "USE"
         ],
         "udmf": [
-            "Exit_Secret",
+            244,
             "0"
         ]
     },
@@ -571,7 +571,7 @@
             "WALK"
         ],
         "udmf": [
-            "Exit_Normal",
+            243,
             "0"
         ]
     },
@@ -580,7 +580,7 @@
             "WALK"
         ],
         "udmf": [
-            "Plat_PerpetualRaiseLip",
+            207,
             "tag",
             8,
             105,
@@ -592,7 +592,7 @@
             "WALK"
         ],
         "udmf": [
-            "Plat_Stop",
+            61,
             "tag"
         ]
     },
@@ -601,7 +601,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_RaiseAndCrushDoom",
+            99,
             "tag",
             8,
             10,
@@ -613,7 +613,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_RaiseAndCrushDoom",
+            99,
             "tag",
             8,
             10,
@@ -625,7 +625,7 @@
             "WALK"
         ],
         "udmf": [
-            "Ceiling_CrushStop",
+            44,
             "tag"
         ]
     },
@@ -634,7 +634,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             24
@@ -645,7 +645,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_RaiseByValueTxTy",
+            239,
             "tag",
             8,
             24
@@ -657,7 +657,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToLowest",
+            21,
             "tag",
             8
         ]
@@ -668,7 +668,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "tag",
             16
         ]
@@ -679,7 +679,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_DownWaitUpStayLip",
+            206,
             "tag",
             32,
             105,
@@ -692,7 +692,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "tag",
             16,
             150
@@ -704,7 +704,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseToLowestCeiling",
+            238,
             "tag",
             8
         ]
@@ -715,7 +715,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseAndCrushDoom",
+            99,
             "tag",
             8,
             10,
@@ -728,7 +728,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_UpByValueStayTx",
+            230,
             "tag",
             8
         ]
@@ -739,7 +739,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_UpByValueStayTx",
+            230,
             "tag",
             8
         ]
@@ -750,7 +750,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_RaiseAndStayTx0",
+            228,
             "tag",
             8
         ]
@@ -761,7 +761,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseToNearest",
+            25,
             "tag",
             8
         ]
@@ -772,7 +772,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToHighest",
+            242,
             "tag",
             32,
             136
@@ -783,7 +783,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_LowerToHighest",
+            242,
             "tag",
             32,
             136
@@ -795,7 +795,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_LowerAndCrush",
+            43,
             "tag",
             8,
             "0",
@@ -808,7 +808,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseA",
+            196,
             "tag",
             8,
             8,
@@ -821,7 +821,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_CrushStop",
+            44,
             "tag"
         ]
     },
@@ -831,7 +831,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Close",
+            10,
             "tag",
             16
         ]
@@ -842,7 +842,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_CloseWaitOpen",
+            249,
             "tag",
             16,
             240
@@ -854,7 +854,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseA",
+            196,
             "tag",
             16,
             16,
@@ -867,7 +867,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_TransferNumeric",
+            236,
             "tag"
         ],
         "comment": "<- BOOM special"
@@ -878,7 +878,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_ChangeToValue",
+            112,
             "tag",
             35
         ]
@@ -889,7 +889,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_MaxNeighbor",
+            234,
             "tag"
         ]
     },
@@ -899,7 +899,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_ChangeToValue",
+            112,
             "tag",
             255
         ]
@@ -910,7 +910,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToLowest",
+            21,
             "tag",
             8
         ]
@@ -921,7 +921,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToHighest",
+            242,
             "tag",
             8,
             128
@@ -933,7 +933,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToLowestTxTy",
+            241,
             "tag",
             8
         ]
@@ -943,7 +943,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Right",
+            101,
             64,
             ""
         ]
@@ -954,7 +954,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "tag",
             16
         ]
@@ -965,7 +965,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_PerpetualRaiseLip",
+            207,
             "tag",
             8,
             105,
@@ -979,7 +979,7 @@
             "MONST"
         ],
         "udmf": [
-            "Plat_DownWaitUpStayLip",
+            206,
             "tag",
             32,
             105,
@@ -992,7 +992,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_Stop",
+            61,
             "tag"
         ]
     },
@@ -1002,7 +1002,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "tag",
             16,
             150
@@ -1014,7 +1014,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseToLowestCeiling",
+            238,
             "tag",
             8
         ]
@@ -1025,7 +1025,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             24
@@ -1037,7 +1037,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByValueTxTy",
+            239,
             "tag",
             8,
             24
@@ -1049,7 +1049,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseAndCrushDoom",
+            99,
             "tag",
             8,
             10,
@@ -1062,7 +1062,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_RaiseAndStayTx0",
+            228,
             "tag",
             8
         ]
@@ -1073,7 +1073,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByTexture",
+            240,
             "tag",
             8
         ]
@@ -1085,7 +1085,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport",
+            70,
             "0",
             "tag"
         ]
@@ -1096,7 +1096,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToHighest",
+            242,
             "tag",
             32,
             136
@@ -1108,7 +1108,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "tag",
             64,
             "0",
@@ -1121,7 +1121,7 @@
             "WALK"
         ],
         "udmf": [
-            "Stairs_BuildUpDoom",
+            217,
             "tag",
             32,
             16,
@@ -1134,7 +1134,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_RaiseToLowestCeiling",
+            238,
             "tag",
             8
         ]
@@ -1144,7 +1144,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_LowerToHighest",
+            242,
             "tag",
             8,
             128
@@ -1155,7 +1155,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "tag",
             16
         ]
@@ -1165,7 +1165,7 @@
             "WALK"
         ],
         "udmf": [
-            "Light_MinNeighbor",
+            233,
             "tag"
         ]
     },
@@ -1175,7 +1175,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "tag",
             64,
             150
@@ -1187,7 +1187,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "tag",
             64
         ]
@@ -1198,7 +1198,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Close",
+            10,
             "tag",
             64
         ]
@@ -1208,7 +1208,7 @@
             "WALK"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "tag",
             64,
             150
@@ -1219,7 +1219,7 @@
             "WALK"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "tag",
             64
         ]
@@ -1229,7 +1229,7 @@
             "WALK"
         ],
         "udmf": [
-            "Door_Close",
+            10,
             "tag",
             64
         ]
@@ -1239,7 +1239,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "tag",
             64,
             150
@@ -1250,7 +1250,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "tag",
             64
         ]
@@ -1260,7 +1260,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_Close",
+            10,
             "tag",
             64
         ]
@@ -1271,7 +1271,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "tag",
             64,
             150
@@ -1283,7 +1283,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "tag",
             64
         ]
@@ -1294,7 +1294,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Close",
+            10,
             "tag",
             64
         ]
@@ -1305,7 +1305,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_Raise",
+            12,
             "0",
             64,
             150,
@@ -1317,7 +1317,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_Open",
+            11,
             "0",
             64,
             "tag"
@@ -1328,7 +1328,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_RaiseToNearest",
+            25,
             "tag",
             8
         ]
@@ -1339,7 +1339,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_DownWaitUpStayLip",
+            206,
             "tag",
             64,
             105,
@@ -1351,7 +1351,7 @@
             "WALK"
         ],
         "udmf": [
-            "Plat_DownWaitUpStayLip",
+            206,
             "tag",
             64,
             105,
@@ -1363,7 +1363,7 @@
             "USE"
         ],
         "udmf": [
-            "Plat_DownWaitUpStayLip",
+            206,
             "tag",
             64,
             105,
@@ -1376,7 +1376,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_DownWaitUpStayLip",
+            206,
             "tag",
             64,
             105,
@@ -1388,7 +1388,7 @@
             "WALK"
         ],
         "udmf": [
-            "Exit_Secret",
+            244,
             "0"
         ]
     },
@@ -1397,7 +1397,7 @@
             "MONWALK"
         ],
         "udmf": [
-            "Teleport",
+            70,
             "0",
             "tag"
         ]
@@ -1408,7 +1408,7 @@
             "REP"
         ],
         "udmf": [
-            "Teleport",
+            70,
             "0",
             "tag"
         ]
@@ -1418,7 +1418,7 @@
             "USE"
         ],
         "udmf": [
-            "Stairs_BuildUpDoom",
+            217,
             "tag",
             32,
             16,
@@ -1432,7 +1432,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseToNearest",
+            25,
             "tag",
             8
         ]
@@ -1443,7 +1443,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseToNearest",
+            25,
             "tag",
             32
         ]
@@ -1453,7 +1453,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_RaiseToNearest",
+            25,
             "tag",
             32
         ]
@@ -1463,7 +1463,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_RaiseToNearest",
+            25,
             "tag",
             32
         ]
@@ -1474,7 +1474,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseToNearest",
+            25,
             "tag",
             32
         ]
@@ -1484,7 +1484,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "tag",
             64,
             "0",
@@ -1498,7 +1498,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "tag",
             64,
             "0",
@@ -1511,7 +1511,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "tag",
             64,
             "0",
@@ -1525,7 +1525,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "tag",
             64,
             "0",
@@ -1538,7 +1538,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_LockedRaise",
+            13,
             "tag",
             64,
             "0",
@@ -1552,7 +1552,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_ChangeToValue",
+            112,
             "tag",
             255
         ]
@@ -1563,7 +1563,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_ChangeToValue",
+            112,
             "tag",
             35
         ]
@@ -1573,7 +1573,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_RaiseByValueTimes8",
+            35,
             "tag",
             8,
             64
@@ -1584,7 +1584,7 @@
             "WALK"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseSilentA",
+            197,
             "tag",
             8,
             8,
@@ -1596,7 +1596,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_RaiseByValueTimes8",
+            35,
             "tag",
             8,
             64
@@ -1607,7 +1607,7 @@
             "WALK"
         ],
         "udmf": [
-            "Plat_UpByValueStayTx",
+            230,
             "tag",
             8
         ]
@@ -1617,7 +1617,7 @@
             "WALK"
         ],
         "udmf": [
-            "Plat_UpByValueStayTx",
+            230,
             "tag",
             8
         ]
@@ -1627,7 +1627,7 @@
             "WALK"
         ],
         "udmf": [
-            "Ceiling_LowerToFloor",
+            254,
             "tag",
             8
         ]
@@ -1637,7 +1637,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_Donut",
+            250,
             "tag",
             4,
             4
@@ -1649,7 +1649,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByValueTimes8",
+            35,
             "tag",
             8,
             64
@@ -1661,7 +1661,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_UpByValueStayTx",
+            230,
             "tag",
             8
         ]
@@ -1672,7 +1672,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_UpByValueStayTx",
+            230,
             "tag",
             8
         ]
@@ -1683,7 +1683,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseSilentA",
+            197,
             "tag",
             8,
             8,
@@ -1696,7 +1696,7 @@
             "REP"
         ],
         "udmf": [
-            "FloorAndCeiling_LowerRaise",
+            251,
             "tag",
             8,
             8
@@ -1708,7 +1708,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_LowerToFloor",
+            254,
             "tag",
             8
         ]
@@ -1718,7 +1718,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_TransferTrigger",
+            235,
             "tag"
         ]
     },
@@ -1728,7 +1728,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_TransferTrigger",
+            235,
             "tag"
         ]
     },
@@ -1738,7 +1738,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_Donut",
+            250,
             "tag",
             4,
             4
@@ -1750,7 +1750,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_StrobeDoom",
+            232,
             "tag",
             5,
             35
@@ -1762,7 +1762,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_MinNeighbor",
+            233,
             "tag"
         ]
     },
@@ -1771,7 +1771,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_RaiseByTexture",
+            240,
             "tag",
             8
         ]
@@ -1781,7 +1781,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_LowerToLowestTxTy",
+            241,
             "tag",
             8
         ]
@@ -1791,7 +1791,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_RaiseByValueTxTy",
+            239,
             "tag",
             8,
             24
@@ -1802,7 +1802,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             24
@@ -1813,7 +1813,7 @@
             "USE"
         ],
         "udmf": [
-            "Plat_PerpetualRaiseLip",
+            207,
             "tag",
             8,
             105,
@@ -1825,7 +1825,7 @@
             "USE"
         ],
         "udmf": [
-            "Plat_Stop",
+            61,
             "tag"
         ]
     },
@@ -1834,7 +1834,7 @@
             "USE"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseA",
+            196,
             "tag",
             16,
             16,
@@ -1846,7 +1846,7 @@
             "USE"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseSilentA",
+            197,
             "tag",
             8,
             8,
@@ -1858,7 +1858,7 @@
             "USE"
         ],
         "udmf": [
-            "FloorAndCeiling_LowerRaise",
+            251,
             "tag",
             8,
             8,
@@ -1870,7 +1870,7 @@
             "USE"
         ],
         "udmf": [
-            "Ceiling_LowerAndCrush",
+            43,
             "tag",
             8,
             "0",
@@ -1882,7 +1882,7 @@
             "USE"
         ],
         "udmf": [
-            "Ceiling_CrushStop",
+            44,
             "tag"
         ]
     },
@@ -1891,7 +1891,7 @@
             "USE"
         ],
         "udmf": [
-            "Light_MaxNeighbor",
+            234,
             "tag"
         ]
     },
@@ -1900,7 +1900,7 @@
             "USE"
         ],
         "udmf": [
-            "Light_ChangeToValue",
+            112,
             "tag",
             35
         ]
@@ -1910,7 +1910,7 @@
             "USE"
         ],
         "udmf": [
-            "Light_ChangeToValue",
+            112,
             "tag",
             255
         ]
@@ -1920,7 +1920,7 @@
             "USE"
         ],
         "udmf": [
-            "Light_StrobeDoom",
+            232,
             "tag",
             5,
             35
@@ -1931,7 +1931,7 @@
             "USE"
         ],
         "udmf": [
-            "Light_MinNeighbor",
+            233,
             "tag"
         ]
     },
@@ -1941,7 +1941,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport",
+            70,
             "0",
             "tag"
         ]
@@ -1951,7 +1951,7 @@
             "USE"
         ],
         "udmf": [
-            "Door_CloseWaitOpen",
+            249,
             "tag",
             16,
             240
@@ -1963,7 +1963,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByTexture",
+            240,
             "tag",
             8
         ]
@@ -1974,7 +1974,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToLowestTxTy",
+            241,
             "tag",
             8
         ]
@@ -1985,7 +1985,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByValueTimes8",
+            35,
             "tag",
             8,
             64
@@ -1997,7 +1997,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByValueTxTy",
+            239,
             "tag",
             8,
             24
@@ -2009,7 +2009,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             24
@@ -2021,7 +2021,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_PerpetualRaiseLip",
+            207,
             "tag",
             8,
             105,
@@ -2034,7 +2034,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_Stop",
+            61,
             "tag"
         ]
     },
@@ -2044,7 +2044,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseA",
+            196,
             "tag",
             16,
             16,
@@ -2057,7 +2057,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseA",
+            196,
             "tag",
             8,
             8,
@@ -2070,7 +2070,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_CrushAndRaiseSilentA",
+            197,
             "tag",
             8,
             8,
@@ -2083,7 +2083,7 @@
             "REP"
         ],
         "udmf": [
-            "FloorAndCeiling_LowerRaise",
+            251,
             "tag",
             8,
             8,
@@ -2096,7 +2096,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_LowerAndCrush",
+            43,
             "tag",
             8,
             "0",
@@ -2109,7 +2109,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_CrushStop",
+            44,
             "tag"
         ]
     },
@@ -2118,7 +2118,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_TransferTrigger",
+            235,
             "tag"
         ]
     },
@@ -2128,7 +2128,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_TransferTrigger",
+            235,
             "tag"
         ]
     },
@@ -2138,7 +2138,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_Donut",
+            250,
             "tag",
             4,
             4
@@ -2150,7 +2150,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_MaxNeighbor",
+            234,
             "tag"
         ]
     },
@@ -2160,7 +2160,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_StrobeDoom",
+            232,
             "tag",
             5,
             35
@@ -2172,7 +2172,7 @@
             "REP"
         ],
         "udmf": [
-            "Light_MinNeighbor",
+            233,
             "tag"
         ]
     },
@@ -2183,7 +2183,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport",
+            70,
             "0",
             "tag"
         ]
@@ -2194,7 +2194,7 @@
             "REP"
         ],
         "udmf": [
-            "Door_CloseWaitOpen",
+            249,
             "tag",
             16,
             240
@@ -2205,7 +2205,7 @@
             "SHOOT"
         ],
         "udmf": [
-            "Exit_Normal",
+            243,
             "0"
         ]
     },
@@ -2214,7 +2214,7 @@
             "SHOOT"
         ],
         "udmf": [
-            "Exit_Secret",
+            244,
             "0"
         ]
     },
@@ -2223,7 +2223,7 @@
             "WALK"
         ],
         "udmf": [
-            "Ceiling_LowerToLowest",
+            253,
             "tag",
             8
         ]
@@ -2233,7 +2233,7 @@
             "WALK"
         ],
         "udmf": [
-            "Ceiling_LowerToHighestFloor",
+            192,
             "tag",
             8
         ]
@@ -2244,7 +2244,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_LowerToLowest",
+            253,
             "tag",
             8
         ]
@@ -2255,7 +2255,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_LowerToHighestFloor",
+            192,
             "tag",
             8
         ]
@@ -2265,7 +2265,7 @@
             "USE"
         ],
         "udmf": [
-            "Ceiling_LowerToLowest",
+            253,
             "tag",
             8
         ]
@@ -2275,7 +2275,7 @@
             "USE"
         ],
         "udmf": [
-            "Ceiling_LowerToHighestFloor",
+            192,
             "tag",
             8
         ]
@@ -2286,7 +2286,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_LowerToLowest",
+            253,
             "tag",
             8
         ]
@@ -2297,7 +2297,7 @@
             "REP"
         ],
         "udmf": [
-            "Ceiling_LowerToHighestFloor",
+            192,
             "tag",
             8
         ]
@@ -2308,7 +2308,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport_NoFog",
+            71,
             "0",
             "0",
             "tag",
@@ -2322,7 +2322,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport_NoFog",
+            71,
             "0",
             "0",
             "tag",
@@ -2335,7 +2335,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport_NoFog",
+            71,
             "0",
             "0",
             "tag",
@@ -2349,7 +2349,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport_NoFog",
+            71,
             "0",
             "0",
             "tag",
@@ -2362,7 +2362,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_ToggleCeiling",
+            231,
             "tag"
         ]
     },
@@ -2372,7 +2372,7 @@
             "REP"
         ],
         "udmf": [
-            "Plat_ToggleCeiling",
+            231,
             "tag"
         ]
     },
@@ -2381,7 +2381,7 @@
             "0"
         ],
         "udmf": [
-            "Transfer_FloorLight",
+            210,
             "tag"
         ]
     },
@@ -2390,7 +2390,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Ceiling",
+            224,
             "tag",
             6,
             "0",
@@ -2403,7 +2403,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Floor",
+            223,
             "tag",
             6,
             "0",
@@ -2416,7 +2416,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Floor",
+            223,
             "tag",
             6,
             1,
@@ -2429,7 +2429,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Floor",
+            223,
             "tag",
             6,
             2,
@@ -2442,7 +2442,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Model",
+            222,
             "lineid",
             2
         ]
@@ -2452,7 +2452,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_LowerToNearest",
+            22,
             "tag",
             8
         ]
@@ -2463,7 +2463,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToNearest",
+            22,
             "tag",
             8
         ]
@@ -2473,7 +2473,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_LowerToNearest",
+            22,
             "tag",
             8
         ]
@@ -2484,7 +2484,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_LowerToNearest",
+            22,
             "tag",
             8
         ]
@@ -2494,7 +2494,7 @@
             "0"
         ],
         "udmf": [
-            "Sector_SetFriction",
+            219,
             "tag",
             "0"
         ]
@@ -2504,7 +2504,7 @@
             "0"
         ],
         "udmf": [
-            "Sector_SetWind",
+            218,
             "tag",
             "0",
             "0",
@@ -2516,7 +2516,7 @@
             "0"
         ],
         "udmf": [
-            "Sector_SetCurrent",
+            220,
             "tag",
             "0",
             "0",
@@ -2528,7 +2528,7 @@
             "0"
         ],
         "udmf": [
-            "PointPush_SetForce",
+            227,
             "tag",
             "0",
             "0",
@@ -2540,7 +2540,7 @@
             "WALK"
         ],
         "udmf": [
-            "Elevator_RaiseToNearest",
+            245,
             "tag",
             32
         ]
@@ -2551,7 +2551,7 @@
             "REP"
         ],
         "udmf": [
-            "Elevator_RaiseToNearest",
+            245,
             "tag",
             32
         ]
@@ -2561,7 +2561,7 @@
             "USE"
         ],
         "udmf": [
-            "Elevator_RaiseToNearest",
+            245,
             "tag",
             32
         ]
@@ -2572,7 +2572,7 @@
             "REP"
         ],
         "udmf": [
-            "Elevator_RaiseToNearest",
+            245,
             "tag",
             32
         ]
@@ -2582,7 +2582,7 @@
             "WALK"
         ],
         "udmf": [
-            "Elevator_LowerToNearest",
+            247,
             "tag",
             32
         ]
@@ -2593,7 +2593,7 @@
             "REP"
         ],
         "udmf": [
-            "Elevator_LowerToNearest",
+            247,
             "tag",
             32
         ]
@@ -2603,7 +2603,7 @@
             "USE"
         ],
         "udmf": [
-            "Elevator_LowerToNearest",
+            247,
             "tag",
             32
         ]
@@ -2614,7 +2614,7 @@
             "REP"
         ],
         "udmf": [
-            "Elevator_LowerToNearest",
+            247,
             "tag",
             32
         ]
@@ -2624,7 +2624,7 @@
             "WALK"
         ],
         "udmf": [
-            "Elevator_MoveToFloor",
+            246,
             "tag",
             32
         ]
@@ -2635,7 +2635,7 @@
             "REP"
         ],
         "udmf": [
-            "Elevator_MoveToFloor",
+            246,
             "tag",
             32
         ]
@@ -2645,7 +2645,7 @@
             "USE"
         ],
         "udmf": [
-            "Elevator_MoveToFloor",
+            246,
             "tag",
             32
         ]
@@ -2656,7 +2656,7 @@
             "REP"
         ],
         "udmf": [
-            "Elevator_MoveToFloor",
+            246,
             "tag",
             32
         ]
@@ -2666,7 +2666,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_TransferNumeric",
+            236,
             "tag"
         ]
     },
@@ -2676,7 +2676,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_TransferNumeric",
+            236,
             "tag"
         ]
     },
@@ -2685,7 +2685,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_TransferNumeric",
+            236,
             "tag"
         ]
     },
@@ -2694,7 +2694,7 @@
             "0"
         ],
         "udmf": [
-            "Transfer_Heights",
+            209,
             "tag"
         ]
     },
@@ -2704,7 +2704,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport_Line",
+            215,
             "tag",
             "tag",
             "0"
@@ -2717,7 +2717,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport_Line",
+            215,
             "tag",
             "tag",
             "0"
@@ -2728,7 +2728,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Ceiling",
+            224,
             "tag",
             5,
             "0",
@@ -2741,7 +2741,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Floor",
+            223,
             "tag",
             5,
             "0",
@@ -2754,7 +2754,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Floor",
+            223,
             "tag",
             5,
             1,
@@ -2767,7 +2767,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Floor",
+            223,
             "tag",
             5,
             2,
@@ -2780,7 +2780,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Model",
+            222,
             "lineid",
             1
         ]
@@ -2790,7 +2790,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Ceiling",
+            224,
             "tag",
             4,
             "0",
@@ -2803,7 +2803,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Floor",
+            223,
             "tag",
             4,
             "0",
@@ -2816,7 +2816,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Floor",
+            223,
             "tag",
             4,
             1,
@@ -2829,7 +2829,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Floor",
+            223,
             "tag",
             4,
             2,
@@ -2842,7 +2842,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Model",
+            222,
             "lineid",
             "0"
         ]
@@ -2852,7 +2852,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Offsets",
+            225,
             ""
         ]
     },
@@ -2862,7 +2862,7 @@
             "REP"
         ],
         "udmf": [
-            "Stairs_BuildUpDoom",
+            217,
             "tag",
             2,
             8,
@@ -2876,7 +2876,7 @@
             "REP"
         ],
         "udmf": [
-            "Stairs_BuildUpDoom",
+            217,
             "tag",
             32,
             16,
@@ -2890,7 +2890,7 @@
             "REP"
         ],
         "udmf": [
-            "Stairs_BuildUpDoom",
+            217,
             "tag",
             2,
             8,
@@ -2904,7 +2904,7 @@
             "REP"
         ],
         "udmf": [
-            "Stairs_BuildUpDoom",
+            217,
             "tag",
             32,
             16,
@@ -2917,7 +2917,7 @@
             "0"
         ],
         "udmf": [
-            "TranslucentLine",
+            208,
             "lineid",
             128
         ],
@@ -2928,7 +2928,7 @@
             "0"
         ],
         "udmf": [
-            "Transfer_CeilingLight",
+            211,
             "tag"
         ]
     },
@@ -2938,7 +2938,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport_Line",
+            215,
             "tag",
             "tag",
             1
@@ -2951,7 +2951,7 @@
             "MONST"
         ],
         "udmf": [
-            "Teleport_Line",
+            215,
             "tag",
             "tag",
             1
@@ -2962,7 +2962,7 @@
             "MONWALK"
         ],
         "udmf": [
-            "Teleport_Line",
+            215,
             "tag",
             "tag",
             1
@@ -2974,7 +2974,7 @@
             "REP"
         ],
         "udmf": [
-            "Teleport_Line",
+            215,
             "tag",
             "tag",
             1
@@ -2985,7 +2985,7 @@
             "MONWALK"
         ],
         "udmf": [
-            "Teleport_Line",
+            215,
             "tag",
             "tag",
             "0"
@@ -2997,7 +2997,7 @@
             "REP"
         ],
         "udmf": [
-            "Teleport_Line",
+            215,
             "tag",
             "tag",
             "0"
@@ -3008,7 +3008,7 @@
             "MONWALK"
         ],
         "udmf": [
-            "Teleport_NoFog",
+            71,
             "0",
             "0",
             "tag",
@@ -3021,7 +3021,7 @@
             "REP"
         ],
         "udmf": [
-            "Teleport_NoFog",
+            71,
             "0",
             "0",
             "tag",
@@ -3042,7 +3042,7 @@
             "0"
         ],
         "udmf": [
-            "Static_Init",
+            190,
             "tag",
             "Init_TransferSky",
             "0"
@@ -3053,7 +3053,7 @@
             "0"
         ],
         "udmf": [
-            "Static_Init",
+            190,
             "tag",
             "Init_TransferSky",
             1
@@ -3125,7 +3125,7 @@
             "0"
         ],
         "udmf": [
-            "Transfer_Heights",
+            209,
             "tag",
             12
         ]
@@ -3155,7 +3155,7 @@
             "0"
         ],
         "udmf": [
-            "TranslucentLine",
+            208,
             "lineid",
             128,
             "0"
@@ -3166,7 +3166,7 @@
             "0"
         ],
         "udmf": [
-            "TranslucentLine",
+            208,
             "lineid",
             192,
             "0"
@@ -3177,7 +3177,7 @@
             "0"
         ],
         "udmf": [
-            "TranslucentLine",
+            208,
             "lineid",
             48,
             "0"
@@ -3188,7 +3188,7 @@
             "0"
         ],
         "udmf": [
-            "TranslucentLine",
+            208,
             "lineid",
             128,
             1
@@ -3301,7 +3301,7 @@
             "0"
         ],
         "udmf": [
-            "Static_Init",
+            190,
             "tag",
             "Init_Gravity"
         ]
@@ -3311,7 +3311,7 @@
             "0"
         ],
         "udmf": [
-            "Static_Init",
+            190,
             "tag",
             "Init_Color"
         ]
@@ -3321,7 +3321,7 @@
             "0"
         ],
         "udmf": [
-            "Static_Init",
+            190,
             "tag",
             "Init_Damage"
         ]
@@ -3331,7 +3331,7 @@
             "0"
         ],
         "udmf": [
-            "Line_Mirror",
+            182,
             ""
         ]
     },
@@ -3340,7 +3340,7 @@
             "0"
         ],
         "udmf": [
-            "Line_Horizon",
+            9,
             ""
         ]
     },
@@ -3349,7 +3349,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_Waggle",
+            138,
             "tag",
             24,
             32,
@@ -3362,7 +3362,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_Waggle",
+            138,
             "tag",
             12,
             32,
@@ -3375,7 +3375,7 @@
             "0"
         ],
         "udmf": [
-            "Plane_Align",
+            181,
             1,
             "0"
         ],
@@ -3386,7 +3386,7 @@
             "0"
         ],
         "udmf": [
-            "Plane_Align",
+            181,
             "0",
             1
         ],
@@ -3397,7 +3397,7 @@
             "0"
         ],
         "udmf": [
-            "Plane_Align",
+            181,
             1,
             1
         ],
@@ -3408,7 +3408,7 @@
             "0"
         ],
         "udmf": [
-            "Plane_Align",
+            181,
             2,
             "0"
         ],
@@ -3419,7 +3419,7 @@
             "0"
         ],
         "udmf": [
-            "Plane_Align",
+            181,
             "0",
             2
         ],
@@ -3430,7 +3430,7 @@
             "0"
         ],
         "udmf": [
-            "Plane_Align",
+            181,
             2,
             2
         ],
@@ -3441,7 +3441,7 @@
             "0"
         ],
         "udmf": [
-            "Plane_Align",
+            181,
             2,
             1
         ],
@@ -3452,7 +3452,7 @@
             "0"
         ],
         "udmf": [
-            "Plane_Align",
+            181,
             1,
             2
         ],
@@ -3463,7 +3463,7 @@
             "WALK"
         ],
         "udmf": [
-            "Autosave",
+            15,
             ""
         ]
     },
@@ -3472,7 +3472,7 @@
             "USE"
         ],
         "udmf": [
-            "Autosave",
+            15,
             ""
         ]
     },
@@ -3481,7 +3481,7 @@
             "0"
         ],
         "udmf": [
-            "Transfer_Heights",
+            209,
             "tag",
             2
         ],
@@ -3492,7 +3492,7 @@
             "0"
         ],
         "udmf": [
-            "Transfer_Heights",
+            209,
             "tag",
             6
         ],
@@ -3631,7 +3631,7 @@
             "0"
         ],
         "udmf": [
-            "TranslucentLine",
+            208,
             "lineid",
             204
         ],
@@ -3642,7 +3642,7 @@
             "0"
         ],
         "udmf": [
-            "TranslucentLine",
+            208,
             "lineid",
             153
         ],
@@ -3653,7 +3653,7 @@
             "0"
         ],
         "udmf": [
-            "TranslucentLine",
+            208,
             "lineid",
             101
         ],
@@ -3664,7 +3664,7 @@
             "0"
         ],
         "udmf": [
-            "TranslucentLine",
+            208,
             "lineid",
             50
         ],
@@ -3730,7 +3730,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Right",
+            101,
             64
         ]
     },
@@ -3739,7 +3739,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Up",
+            102,
             64
         ]
     },
@@ -3748,7 +3748,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Down",
+            103,
             64
         ]
     },
@@ -3757,7 +3757,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Both",
+            221,
             "0",
             64,
             "0",
@@ -3770,7 +3770,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Both",
+            221,
             "0",
             64,
             "0",
@@ -3783,7 +3783,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Both",
+            221,
             "0",
             "0",
             64,
@@ -3796,7 +3796,7 @@
             "0"
         ],
         "udmf": [
-            "Scroll_Texture_Both",
+            221,
             "0",
             "0",
             64,
@@ -3809,7 +3809,7 @@
             "USE"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             2
@@ -3821,7 +3821,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             2
@@ -3832,7 +3832,7 @@
             "WALK"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             2
@@ -3844,7 +3844,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             2
@@ -3855,7 +3855,7 @@
             "SHOOT"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             2
@@ -3867,7 +3867,7 @@
             "REP"
         ],
         "udmf": [
-            "Floor_RaiseByValue",
+            23,
             "tag",
             8,
             2

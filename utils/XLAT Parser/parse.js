@@ -2,10 +2,13 @@
 
 const fs = require('fs');
 const dataParser = require('data-file-parser');
-const {Constants} = require('../../config');
+const {
+	Constants,
+	actionIDs
+} = require('../../config');
 
 const FROM = 'actions.txt';
-const TO = 'parsed.txt';
+const TO = 'parsed.json';
 
 console.log(`\x1b[33m\x1b[1m
 					#====\x1b[36mXLAT actions parser\x1b[33m\x1b[1m====#
@@ -32,9 +35,14 @@ dataParser.parse({
 				.replace(/[()]/g, '')
 				.split(/,?\s+/);
 
-			// Apply constants and parse numbers from strings
+			// Apply constants & actionIDs and parse numbers from strings
 			for (const i in action.udmf) {
-				action.udmf[i] = Constants[action.udmf[i]] || Number(action.udmf[i]) || action.udmf[i];
+				const act = action.udmf[i];
+
+				action.udmf[i] = actionIDs[act]
+					|| Constants[act]
+					|| Number(act)
+					|| act;
 			}
 
 			// Remove comments artifacts
