@@ -115,6 +115,8 @@ BoomParser.Action = class {
 		switch (arg) {
 			case 'tag':
 				return this.otherData.tag || 0;
+			case 'lineid':
+				return this.otherData.lineid || 0;
 			case undefined:
 				return 0;
 			default:

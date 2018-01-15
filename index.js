@@ -109,7 +109,8 @@ function parseLinedefs() {
 				'flags': linedef.flags,
 				'tag': linedef.tag,
 				'front': linedef.front,
-				'back': linedef.back
+				'back': linedef.back,
+				'lineid': i
 			}
 		);
 
