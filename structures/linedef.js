@@ -15,14 +15,20 @@ class Linedef {
 	 * @param  {number} back - SideDef ID
 	 * @param  {object} other - Other attributes
 	 */
-	constructor(_id, v1, v2, flag, special, sector, front, back, other = {}) {
+	constructor(_id, v1, v2, flag, special, args = {}, front, back, other = {}) {
 		this._id = _id;
 
 		this.v1 = Number(v1);
 		this.v2 = Number(v2);
 		this.sidefront = front;
-		this.sideback = back;
-		this.arg0 = sector;
+        this.sideback = back;
+
+        this.arg0 = args.arg1 || 0;
+        this.arg1 = args.arg2 || 0;
+        this.arg2 = args.arg3 || 0;
+        this.arg3 = args.arg4 || 0;
+        this.arg4 = args.arg5 || 0;
+
 		this.special = special;
 
 		this.special = Number(special);
