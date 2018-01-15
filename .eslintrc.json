@@ -75,7 +75,7 @@
         "generator-star-spacing": "error",
         "getter-return": "error",
         "global-require": "off",
-        "guard-for-in": "warn",
+        "guard-for-in": "off",
         "handle-callback-err": "error",
         "id-blacklist": "error",
         "id-length": "off",

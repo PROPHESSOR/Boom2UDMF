@@ -1,6 +1,6 @@
 "use strict";
 
-const Constant = require("./actionConstants");
+const Constant = require("./constants");
 
 /* eslint quotes:["error", "double"] */
 

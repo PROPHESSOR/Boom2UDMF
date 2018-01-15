@@ -1,0 +1,3876 @@
+{
+    "1": {
+        "flags": [
+            "USE",
+            "MONST",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "0",
+            16,
+            150,
+            "tag"
+        ]
+    },
+    "2": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Door_Open",
+            "tag",
+            16
+        ]
+    },
+    "3": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Door_Close",
+            "tag",
+            16
+        ]
+    },
+    "4": {
+        "flags": [
+            "WALK",
+            "MONST"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "tag",
+            16,
+            150
+        ]
+    },
+    "5": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_RaiseToLowestCeiling",
+            "tag",
+            8
+        ]
+    },
+    "6": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseA",
+            "tag",
+            16,
+            16,
+            10
+        ]
+    },
+    "7": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Stairs_BuildUpDoom",
+            "tag",
+            2,
+            8
+        ]
+    },
+    "8": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Stairs_BuildUpDoom",
+            "tag",
+            2,
+            8
+        ]
+    },
+    "9": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_Donut",
+            "tag",
+            4,
+            4
+        ]
+    },
+    "10": {
+        "flags": [
+            "WALK",
+            "MONST"
+        ],
+        "udmf": [
+            "Plat_DownWaitUpStayLip",
+            "tag",
+            32,
+            105,
+            "0"
+        ]
+    },
+    "11": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Exit_Normal",
+            "0"
+        ]
+    },
+    "12": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Light_MaxNeighbor",
+            "tag"
+        ]
+    },
+    "13": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Light_ChangeToValue",
+            "tag",
+            255
+        ]
+    },
+    "14": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Plat_UpByValueStayTx",
+            "tag",
+            8
+        ]
+    },
+    "15": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Plat_UpByValueStayTx",
+            "tag",
+            8
+        ]
+    },
+    "16": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Door_CloseWaitOpen",
+            "tag",
+            16,
+            240
+        ]
+    },
+    "17": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Light_StrobeDoom",
+            "tag",
+            5,
+            35
+        ]
+    },
+    "18": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_RaiseToNearest",
+            "tag",
+            8
+        ]
+    },
+    "19": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_LowerToHighest",
+            "tag",
+            8,
+            128
+        ]
+    },
+    "20": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Plat_RaiseAndStayTx0",
+            "tag",
+            8
+        ]
+    },
+    "21": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Plat_DownWaitUpStayLip",
+            "tag",
+            32,
+            105
+        ]
+    },
+    "22": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Plat_RaiseAndStayTx0",
+            "tag",
+            8
+        ]
+    },
+    "23": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_LowerToLowest",
+            "tag",
+            8
+        ]
+    },
+    "24": {
+        "flags": [
+            "SHOOT"
+        ],
+        "udmf": [
+            "Floor_RaiseToLowestCeiling",
+            "tag",
+            8
+        ]
+    },
+    "25": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseA",
+            "tag",
+            8,
+            8,
+            10
+        ]
+    },
+    "26": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "0",
+            16,
+            150,
+            "BCard",
+            ""
+        ]
+    },
+    "27": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "0",
+            16,
+            150,
+            "YCard",
+            ""
+        ]
+    },
+    "28": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "0",
+            16,
+            150,
+            "RCard",
+            ""
+        ]
+    },
+    "29": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "tag",
+            16,
+            150
+        ]
+    },
+    "30": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_RaiseByTexture",
+            "tag",
+            8
+        ]
+    },
+    "31": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_Open",
+            "0",
+            16,
+            "tag"
+        ]
+    },
+    "32": {
+        "flags": [
+            "USE",
+            "MONST"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "0",
+            16,
+            "0",
+            "BCard",
+            ""
+        ]
+    },
+    "33": {
+        "flags": [
+            "USE",
+            "MONST"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "0",
+            16,
+            "0",
+            "RCard",
+            ""
+        ]
+    },
+    "34": {
+        "flags": [
+            "USE",
+            "MONST"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "0",
+            16,
+            "0",
+            "YCard",
+            ""
+        ]
+    },
+    "35": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Light_ChangeToValue",
+            "tag",
+            35
+        ]
+    },
+    "36": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_LowerToHighest",
+            "tag",
+            32,
+            136
+        ]
+    },
+    "37": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_LowerToLowestTxTy",
+            "tag",
+            8
+        ]
+    },
+    "38": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_LowerToLowest",
+            "tag",
+            8
+        ]
+    },
+    "39": {
+        "flags": [
+            "WALK",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport",
+            "0",
+            "tag"
+        ]
+    },
+    "40": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Generic_Ceiling",
+            "tag",
+            8,
+            "0",
+            1,
+            8
+        ]
+    },
+    "41": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Ceiling_LowerToFloor",
+            "tag",
+            8
+        ]
+    },
+    "42": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Close",
+            "tag",
+            16
+        ]
+    },
+    "43": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_LowerToFloor",
+            "tag",
+            8
+        ]
+    },
+    "44": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Ceiling_LowerAndCrush",
+            "tag",
+            8,
+            "0",
+            2
+        ]
+    },
+    "45": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToHighest",
+            "tag",
+            8,
+            128
+        ]
+    },
+    "46": {
+        "flags": [
+            "SHOOT",
+            "REP",
+            "MONST"
+        ],
+        "udmf": [
+            "Door_Open",
+            "tag",
+            16
+        ]
+    },
+    "47": {
+        "flags": [
+            "SHOOT"
+        ],
+        "udmf": [
+            "Plat_RaiseAndStayTx0",
+            "tag",
+            8
+        ]
+    },
+    "48": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Left",
+            64
+        ]
+    },
+    "49": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseDist",
+            "tag",
+            8,
+            8,
+            10
+        ]
+    },
+    "50": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_Close",
+            "tag",
+            16
+        ]
+    },
+    "51": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Exit_Secret",
+            "0"
+        ]
+    },
+    "52": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Exit_Normal",
+            "0"
+        ]
+    },
+    "53": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Plat_PerpetualRaiseLip",
+            "tag",
+            8,
+            105,
+            "0"
+        ]
+    },
+    "54": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Plat_Stop",
+            "tag"
+        ]
+    },
+    "55": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_RaiseAndCrushDoom",
+            "tag",
+            8,
+            10,
+            2
+        ]
+    },
+    "56": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_RaiseAndCrushDoom",
+            "tag",
+            8,
+            10,
+            2
+        ]
+    },
+    "57": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Ceiling_CrushStop",
+            "tag"
+        ]
+    },
+    "58": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            24
+        ]
+    },
+    "59": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_RaiseByValueTxTy",
+            "tag",
+            8,
+            24
+        ]
+    },
+    "60": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToLowest",
+            "tag",
+            8
+        ]
+    },
+    "61": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Open",
+            "tag",
+            16
+        ]
+    },
+    "62": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_DownWaitUpStayLip",
+            "tag",
+            32,
+            105,
+            "0"
+        ]
+    },
+    "63": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "tag",
+            16,
+            150
+        ]
+    },
+    "64": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseToLowestCeiling",
+            "tag",
+            8
+        ]
+    },
+    "65": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseAndCrushDoom",
+            "tag",
+            8,
+            10,
+            2
+        ]
+    },
+    "66": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_UpByValueStayTx",
+            "tag",
+            8
+        ]
+    },
+    "67": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_UpByValueStayTx",
+            "tag",
+            8
+        ]
+    },
+    "68": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_RaiseAndStayTx0",
+            "tag",
+            8
+        ]
+    },
+    "69": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseToNearest",
+            "tag",
+            8
+        ]
+    },
+    "70": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToHighest",
+            "tag",
+            32,
+            136
+        ]
+    },
+    "71": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_LowerToHighest",
+            "tag",
+            32,
+            136
+        ]
+    },
+    "72": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_LowerAndCrush",
+            "tag",
+            8,
+            "0",
+            2
+        ]
+    },
+    "73": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseA",
+            "tag",
+            8,
+            8,
+            10
+        ]
+    },
+    "74": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_CrushStop",
+            "tag"
+        ]
+    },
+    "75": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Close",
+            "tag",
+            16
+        ]
+    },
+    "76": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Door_CloseWaitOpen",
+            "tag",
+            16,
+            240
+        ]
+    },
+    "77": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseA",
+            "tag",
+            16,
+            16,
+            10
+        ]
+    },
+    "78": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_TransferNumeric",
+            "tag"
+        ],
+        "comment": "<- BOOM special"
+    },
+    "79": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Light_ChangeToValue",
+            "tag",
+            35
+        ]
+    },
+    "80": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Light_MaxNeighbor",
+            "tag"
+        ]
+    },
+    "81": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Light_ChangeToValue",
+            "tag",
+            255
+        ]
+    },
+    "82": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToLowest",
+            "tag",
+            8
+        ]
+    },
+    "83": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToHighest",
+            "tag",
+            8,
+            128
+        ]
+    },
+    "84": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToLowestTxTy",
+            "tag",
+            8
+        ]
+    },
+    "85": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Right",
+            64,
+            ""
+        ]
+    },
+    "86": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Open",
+            "tag",
+            16
+        ]
+    },
+    "87": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_PerpetualRaiseLip",
+            "tag",
+            8,
+            105,
+            "0"
+        ]
+    },
+    "88": {
+        "flags": [
+            "WALK",
+            "REP",
+            "MONST"
+        ],
+        "udmf": [
+            "Plat_DownWaitUpStayLip",
+            "tag",
+            32,
+            105,
+            "0"
+        ]
+    },
+    "89": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_Stop",
+            "tag"
+        ]
+    },
+    "90": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "tag",
+            16,
+            150
+        ]
+    },
+    "91": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseToLowestCeiling",
+            "tag",
+            8
+        ]
+    },
+    "92": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            24
+        ]
+    },
+    "93": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByValueTxTy",
+            "tag",
+            8,
+            24
+        ]
+    },
+    "94": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseAndCrushDoom",
+            "tag",
+            8,
+            10,
+            2
+        ]
+    },
+    "95": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_RaiseAndStayTx0",
+            "tag",
+            8
+        ]
+    },
+    "96": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByTexture",
+            "tag",
+            8
+        ]
+    },
+    "97": {
+        "flags": [
+            "WALK",
+            "REP",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport",
+            "0",
+            "tag"
+        ]
+    },
+    "98": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToHighest",
+            "tag",
+            32,
+            136
+        ]
+    },
+    "99": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "tag",
+            64,
+            "0",
+            "BCard",
+            ""
+        ]
+    },
+    "100": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Stairs_BuildUpDoom",
+            "tag",
+            32,
+            16,
+            "0",
+            "0"
+        ]
+    },
+    "101": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_RaiseToLowestCeiling",
+            "tag",
+            8
+        ]
+    },
+    "102": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_LowerToHighest",
+            "tag",
+            8,
+            128
+        ]
+    },
+    "103": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_Open",
+            "tag",
+            16
+        ]
+    },
+    "104": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Light_MinNeighbor",
+            "tag"
+        ]
+    },
+    "105": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "tag",
+            64,
+            150
+        ]
+    },
+    "106": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Open",
+            "tag",
+            64
+        ]
+    },
+    "107": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Close",
+            "tag",
+            64
+        ]
+    },
+    "108": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "tag",
+            64,
+            150
+        ]
+    },
+    "109": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Door_Open",
+            "tag",
+            64
+        ]
+    },
+    "110": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Door_Close",
+            "tag",
+            64
+        ]
+    },
+    "111": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "tag",
+            64,
+            150
+        ]
+    },
+    "112": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_Open",
+            "tag",
+            64
+        ]
+    },
+    "113": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_Close",
+            "tag",
+            64
+        ]
+    },
+    "114": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "tag",
+            64,
+            150
+        ]
+    },
+    "115": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Open",
+            "tag",
+            64
+        ]
+    },
+    "116": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Close",
+            "tag",
+            64
+        ]
+    },
+    "117": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_Raise",
+            "0",
+            64,
+            150,
+            "tag"
+        ]
+    },
+    "118": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_Open",
+            "0",
+            64,
+            "tag"
+        ]
+    },
+    "119": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_RaiseToNearest",
+            "tag",
+            8
+        ]
+    },
+    "120": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_DownWaitUpStayLip",
+            "tag",
+            64,
+            105,
+            "0"
+        ]
+    },
+    "121": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Plat_DownWaitUpStayLip",
+            "tag",
+            64,
+            105,
+            "0"
+        ]
+    },
+    "122": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Plat_DownWaitUpStayLip",
+            "tag",
+            64,
+            105,
+            "0"
+        ]
+    },
+    "123": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_DownWaitUpStayLip",
+            "tag",
+            64,
+            105,
+            "0"
+        ]
+    },
+    "124": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Exit_Secret",
+            "0"
+        ]
+    },
+    "125": {
+        "flags": [
+            "MONWALK"
+        ],
+        "udmf": [
+            "Teleport",
+            "0",
+            "tag"
+        ]
+    },
+    "126": {
+        "flags": [
+            "MONWALK",
+            "REP"
+        ],
+        "udmf": [
+            "Teleport",
+            "0",
+            "tag"
+        ]
+    },
+    "127": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Stairs_BuildUpDoom",
+            "tag",
+            32,
+            16,
+            "0",
+            "0"
+        ]
+    },
+    "128": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseToNearest",
+            "tag",
+            8
+        ]
+    },
+    "129": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseToNearest",
+            "tag",
+            32
+        ]
+    },
+    "130": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_RaiseToNearest",
+            "tag",
+            32
+        ]
+    },
+    "131": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_RaiseToNearest",
+            "tag",
+            32
+        ]
+    },
+    "132": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseToNearest",
+            "tag",
+            32
+        ]
+    },
+    "133": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "tag",
+            64,
+            "0",
+            "BCard",
+            ""
+        ]
+    },
+    "134": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "tag",
+            64,
+            "0",
+            "RCard",
+            ""
+        ]
+    },
+    "135": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "tag",
+            64,
+            "0",
+            "RCard",
+            ""
+        ]
+    },
+    "136": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "tag",
+            64,
+            "0",
+            "YCard",
+            ""
+        ]
+    },
+    "137": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_LockedRaise",
+            "tag",
+            64,
+            "0",
+            "YCard",
+            ""
+        ]
+    },
+    "138": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Light_ChangeToValue",
+            "tag",
+            255
+        ]
+    },
+    "139": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Light_ChangeToValue",
+            "tag",
+            35
+        ]
+    },
+    "140": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_RaiseByValueTimes8",
+            "tag",
+            8,
+            64
+        ]
+    },
+    "141": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseSilentA",
+            "tag",
+            8,
+            8,
+            10
+        ]
+    },
+    "142": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_RaiseByValueTimes8",
+            "tag",
+            8,
+            64
+        ]
+    },
+    "143": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Plat_UpByValueStayTx",
+            "tag",
+            8
+        ]
+    },
+    "144": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Plat_UpByValueStayTx",
+            "tag",
+            8
+        ]
+    },
+    "145": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Ceiling_LowerToFloor",
+            "tag",
+            8
+        ]
+    },
+    "146": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_Donut",
+            "tag",
+            4,
+            4
+        ]
+    },
+    "147": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByValueTimes8",
+            "tag",
+            8,
+            64
+        ]
+    },
+    "148": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_UpByValueStayTx",
+            "tag",
+            8
+        ]
+    },
+    "149": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_UpByValueStayTx",
+            "tag",
+            8
+        ]
+    },
+    "150": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseSilentA",
+            "tag",
+            8,
+            8,
+            10
+        ]
+    },
+    "151": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "FloorAndCeiling_LowerRaise",
+            "tag",
+            8,
+            8
+        ]
+    },
+    "152": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_LowerToFloor",
+            "tag",
+            8
+        ]
+    },
+    "153": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_TransferTrigger",
+            "tag"
+        ]
+    },
+    "154": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_TransferTrigger",
+            "tag"
+        ]
+    },
+    "155": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_Donut",
+            "tag",
+            4,
+            4
+        ]
+    },
+    "156": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Light_StrobeDoom",
+            "tag",
+            5,
+            35
+        ]
+    },
+    "157": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Light_MinNeighbor",
+            "tag"
+        ]
+    },
+    "158": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_RaiseByTexture",
+            "tag",
+            8
+        ]
+    },
+    "159": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_LowerToLowestTxTy",
+            "tag",
+            8
+        ]
+    },
+    "160": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_RaiseByValueTxTy",
+            "tag",
+            8,
+            24
+        ]
+    },
+    "161": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            24
+        ]
+    },
+    "162": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Plat_PerpetualRaiseLip",
+            "tag",
+            8,
+            105,
+            "0"
+        ]
+    },
+    "163": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Plat_Stop",
+            "tag"
+        ]
+    },
+    "164": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseA",
+            "tag",
+            16,
+            16,
+            10
+        ]
+    },
+    "165": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseSilentA",
+            "tag",
+            8,
+            8,
+            10
+        ]
+    },
+    "166": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "FloorAndCeiling_LowerRaise",
+            "tag",
+            8,
+            8,
+            1998
+        ]
+    },
+    "167": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Ceiling_LowerAndCrush",
+            "tag",
+            8,
+            "0",
+            2
+        ]
+    },
+    "168": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Ceiling_CrushStop",
+            "tag"
+        ]
+    },
+    "169": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Light_MaxNeighbor",
+            "tag"
+        ]
+    },
+    "170": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Light_ChangeToValue",
+            "tag",
+            35
+        ]
+    },
+    "171": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Light_ChangeToValue",
+            "tag",
+            255
+        ]
+    },
+    "172": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Light_StrobeDoom",
+            "tag",
+            5,
+            35
+        ]
+    },
+    "173": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Light_MinNeighbor",
+            "tag"
+        ]
+    },
+    "174": {
+        "flags": [
+            "USE",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport",
+            "0",
+            "tag"
+        ]
+    },
+    "175": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Door_CloseWaitOpen",
+            "tag",
+            16,
+            240
+        ]
+    },
+    "176": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByTexture",
+            "tag",
+            8
+        ]
+    },
+    "177": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToLowestTxTy",
+            "tag",
+            8
+        ]
+    },
+    "178": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByValueTimes8",
+            "tag",
+            8,
+            64
+        ]
+    },
+    "179": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByValueTxTy",
+            "tag",
+            8,
+            24
+        ]
+    },
+    "180": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            24
+        ]
+    },
+    "181": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_PerpetualRaiseLip",
+            "tag",
+            8,
+            105,
+            "0"
+        ]
+    },
+    "182": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_Stop",
+            "tag"
+        ]
+    },
+    "183": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseA",
+            "tag",
+            16,
+            16,
+            10
+        ]
+    },
+    "184": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseA",
+            "tag",
+            8,
+            8,
+            10
+        ]
+    },
+    "185": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_CrushAndRaiseSilentA",
+            "tag",
+            8,
+            8,
+            10
+        ]
+    },
+    "186": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "FloorAndCeiling_LowerRaise",
+            "tag",
+            8,
+            8,
+            1998
+        ]
+    },
+    "187": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_LowerAndCrush",
+            "tag",
+            8,
+            "0",
+            2
+        ]
+    },
+    "188": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_CrushStop",
+            "tag"
+        ]
+    },
+    "189": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_TransferTrigger",
+            "tag"
+        ]
+    },
+    "190": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_TransferTrigger",
+            "tag"
+        ]
+    },
+    "191": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_Donut",
+            "tag",
+            4,
+            4
+        ]
+    },
+    "192": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Light_MaxNeighbor",
+            "tag"
+        ]
+    },
+    "193": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Light_StrobeDoom",
+            "tag",
+            5,
+            35
+        ]
+    },
+    "194": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Light_MinNeighbor",
+            "tag"
+        ]
+    },
+    "195": {
+        "flags": [
+            "USE",
+            "REP",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport",
+            "0",
+            "tag"
+        ]
+    },
+    "196": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Door_CloseWaitOpen",
+            "tag",
+            16,
+            240
+        ]
+    },
+    "197": {
+        "flags": [
+            "SHOOT"
+        ],
+        "udmf": [
+            "Exit_Normal",
+            "0"
+        ]
+    },
+    "198": {
+        "flags": [
+            "SHOOT"
+        ],
+        "udmf": [
+            "Exit_Secret",
+            "0"
+        ]
+    },
+    "199": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Ceiling_LowerToLowest",
+            "tag",
+            8
+        ]
+    },
+    "200": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Ceiling_LowerToHighestFloor",
+            "tag",
+            8
+        ]
+    },
+    "201": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_LowerToLowest",
+            "tag",
+            8
+        ]
+    },
+    "202": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_LowerToHighestFloor",
+            "tag",
+            8
+        ]
+    },
+    "203": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Ceiling_LowerToLowest",
+            "tag",
+            8
+        ]
+    },
+    "204": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Ceiling_LowerToHighestFloor",
+            "tag",
+            8
+        ]
+    },
+    "205": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_LowerToLowest",
+            "tag",
+            8
+        ]
+    },
+    "206": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Ceiling_LowerToHighestFloor",
+            "tag",
+            8
+        ]
+    },
+    "207": {
+        "flags": [
+            "WALK",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport_NoFog",
+            "0",
+            "0",
+            "tag",
+            1
+        ]
+    },
+    "208": {
+        "flags": [
+            "WALK",
+            "REP",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport_NoFog",
+            "0",
+            "0",
+            "tag",
+            1
+        ]
+    },
+    "209": {
+        "flags": [
+            "USE",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport_NoFog",
+            "0",
+            "0",
+            "tag",
+            1
+        ]
+    },
+    "210": {
+        "flags": [
+            "USE",
+            "REP",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport_NoFog",
+            "0",
+            "0",
+            "tag",
+            1
+        ]
+    },
+    "211": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_ToggleCeiling",
+            "tag"
+        ]
+    },
+    "212": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Plat_ToggleCeiling",
+            "tag"
+        ]
+    },
+    "213": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Transfer_FloorLight",
+            "tag"
+        ]
+    },
+    "214": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Ceiling",
+            "tag",
+            6,
+            "0",
+            "0",
+            "0"
+        ]
+    },
+    "215": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Floor",
+            "tag",
+            6,
+            "0",
+            "0",
+            "0"
+        ]
+    },
+    "216": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Floor",
+            "tag",
+            6,
+            1,
+            "0",
+            "0"
+        ]
+    },
+    "217": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Floor",
+            "tag",
+            6,
+            2,
+            "0",
+            "0"
+        ]
+    },
+    "218": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Model",
+            "lineid",
+            2
+        ]
+    },
+    "219": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_LowerToNearest",
+            "tag",
+            8
+        ]
+    },
+    "220": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToNearest",
+            "tag",
+            8
+        ]
+    },
+    "221": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_LowerToNearest",
+            "tag",
+            8
+        ]
+    },
+    "222": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_LowerToNearest",
+            "tag",
+            8
+        ]
+    },
+    "223": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_SetFriction",
+            "tag",
+            "0"
+        ]
+    },
+    "224": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_SetWind",
+            "tag",
+            "0",
+            "0",
+            1
+        ]
+    },
+    "225": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_SetCurrent",
+            "tag",
+            "0",
+            "0",
+            1
+        ]
+    },
+    "226": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "PointPush_SetForce",
+            "tag",
+            "0",
+            "0",
+            1
+        ]
+    },
+    "227": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Elevator_RaiseToNearest",
+            "tag",
+            32
+        ]
+    },
+    "228": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Elevator_RaiseToNearest",
+            "tag",
+            32
+        ]
+    },
+    "229": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Elevator_RaiseToNearest",
+            "tag",
+            32
+        ]
+    },
+    "230": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Elevator_RaiseToNearest",
+            "tag",
+            32
+        ]
+    },
+    "231": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Elevator_LowerToNearest",
+            "tag",
+            32
+        ]
+    },
+    "232": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Elevator_LowerToNearest",
+            "tag",
+            32
+        ]
+    },
+    "233": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Elevator_LowerToNearest",
+            "tag",
+            32
+        ]
+    },
+    "234": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Elevator_LowerToNearest",
+            "tag",
+            32
+        ]
+    },
+    "235": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Elevator_MoveToFloor",
+            "tag",
+            32
+        ]
+    },
+    "236": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Elevator_MoveToFloor",
+            "tag",
+            32
+        ]
+    },
+    "237": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Elevator_MoveToFloor",
+            "tag",
+            32
+        ]
+    },
+    "238": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Elevator_MoveToFloor",
+            "tag",
+            32
+        ]
+    },
+    "239": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_TransferNumeric",
+            "tag"
+        ]
+    },
+    "240": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_TransferNumeric",
+            "tag"
+        ]
+    },
+    "241": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_TransferNumeric",
+            "tag"
+        ]
+    },
+    "242": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Transfer_Heights",
+            "tag"
+        ]
+    },
+    "243": {
+        "flags": [
+            "WALK",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport_Line",
+            "tag",
+            "tag",
+            "0"
+        ]
+    },
+    "244": {
+        "flags": [
+            "WALK",
+            "REP",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport_Line",
+            "tag",
+            "tag",
+            "0"
+        ]
+    },
+    "245": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Ceiling",
+            "tag",
+            5,
+            "0",
+            "0",
+            "0"
+        ]
+    },
+    "246": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Floor",
+            "tag",
+            5,
+            "0",
+            "0",
+            "0"
+        ]
+    },
+    "247": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Floor",
+            "tag",
+            5,
+            1,
+            "0",
+            "0"
+        ]
+    },
+    "248": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Floor",
+            "tag",
+            5,
+            2,
+            "0",
+            "0"
+        ]
+    },
+    "249": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Model",
+            "lineid",
+            1
+        ]
+    },
+    "250": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Ceiling",
+            "tag",
+            4,
+            "0",
+            "0",
+            "0"
+        ]
+    },
+    "251": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Floor",
+            "tag",
+            4,
+            "0",
+            "0",
+            "0"
+        ]
+    },
+    "252": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Floor",
+            "tag",
+            4,
+            1,
+            "0",
+            "0"
+        ]
+    },
+    "253": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Floor",
+            "tag",
+            4,
+            2,
+            "0",
+            "0"
+        ]
+    },
+    "254": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Model",
+            "lineid",
+            "0"
+        ]
+    },
+    "255": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Offsets",
+            ""
+        ]
+    },
+    "256": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Stairs_BuildUpDoom",
+            "tag",
+            2,
+            8,
+            "0",
+            "0"
+        ]
+    },
+    "257": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Stairs_BuildUpDoom",
+            "tag",
+            32,
+            16,
+            "0",
+            "0"
+        ]
+    },
+    "258": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Stairs_BuildUpDoom",
+            "tag",
+            2,
+            8,
+            "0",
+            "0"
+        ]
+    },
+    "259": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Stairs_BuildUpDoom",
+            "tag",
+            32,
+            16,
+            "0",
+            "0"
+        ]
+    },
+    "260": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLine",
+            "lineid",
+            128
+        ],
+        "comment": "Changed to better reflect the BOOM default"
+    },
+    "261": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Transfer_CeilingLight",
+            "tag"
+        ]
+    },
+    "262": {
+        "flags": [
+            "WALK",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport_Line",
+            "tag",
+            "tag",
+            1
+        ]
+    },
+    "263": {
+        "flags": [
+            "WALK",
+            "REP",
+            "MONST"
+        ],
+        "udmf": [
+            "Teleport_Line",
+            "tag",
+            "tag",
+            1
+        ]
+    },
+    "264": {
+        "flags": [
+            "MONWALK"
+        ],
+        "udmf": [
+            "Teleport_Line",
+            "tag",
+            "tag",
+            1
+        ]
+    },
+    "265": {
+        "flags": [
+            "MONWALK",
+            "REP"
+        ],
+        "udmf": [
+            "Teleport_Line",
+            "tag",
+            "tag",
+            1
+        ]
+    },
+    "266": {
+        "flags": [
+            "MONWALK"
+        ],
+        "udmf": [
+            "Teleport_Line",
+            "tag",
+            "tag",
+            "0"
+        ]
+    },
+    "267": {
+        "flags": [
+            "MONWALK",
+            "REP"
+        ],
+        "udmf": [
+            "Teleport_Line",
+            "tag",
+            "tag",
+            "0"
+        ]
+    },
+    "268": {
+        "flags": [
+            "MONWALK"
+        ],
+        "udmf": [
+            "Teleport_NoFog",
+            "0",
+            "0",
+            "tag",
+            1
+        ]
+    },
+    "269": {
+        "flags": [
+            "MONWALK",
+            "REP"
+        ],
+        "udmf": [
+            "Teleport_NoFog",
+            "0",
+            "0",
+            "tag",
+            1
+        ]
+    },
+    "270": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "FS_Executetag"
+        ]
+    },
+    "271": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Static_Init",
+            "tag",
+            "Init_TransferSky",
+            "0"
+        ]
+    },
+    "272": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Static_Init",
+            "tag",
+            "Init_TransferSky",
+            1
+        ]
+    },
+    "273": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "FS_Executetag",
+            1
+        ]
+    },
+    "274": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "FS_Executetag"
+        ]
+    },
+    "275": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "FS_Executetag",
+            1
+        ]
+    },
+    "276": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "FS_Executetag"
+        ]
+    },
+    "277": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "FS_Executetag"
+        ]
+    },
+    "278": {
+        "flags": [
+            "SHOOT",
+            "REP"
+        ],
+        "udmf": [
+            "FS_Executetag"
+        ]
+    },
+    "279": {
+        "flags": [
+            "SHOOT"
+        ],
+        "udmf": [
+            "FS_Executetag"
+        ]
+    },
+    "280": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Transfer_Heights",
+            "tag",
+            12
+        ]
+    },
+    "281": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            "0",
+            255
+        ]
+    },
+    "282": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Static_Inittag",
+            1
+        ]
+    },
+    "284": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLine",
+            "lineid",
+            128,
+            "0"
+        ]
+    },
+    "285": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLine",
+            "lineid",
+            192,
+            "0"
+        ]
+    },
+    "286": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLine",
+            "lineid",
+            48,
+            "0"
+        ]
+    },
+    "287": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLine",
+            "lineid",
+            128,
+            1
+        ]
+    },
+    "288": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLinelineid",
+            255,
+            "0"
+        ]
+    },
+    "289": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            1,
+            255
+        ]
+    },
+    "300": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            1,
+            127
+        ]
+    },
+    "301": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            2,
+            2,
+            127
+        ]
+    },
+    "302": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            3,
+            6,
+            127
+        ]
+    },
+    "303": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            3
+        ]
+    },
+    "304": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            2,
+            2,
+            255
+        ]
+    },
+    "305": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            3,
+            2
+        ]
+    },
+    "306": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1
+        ]
+    },
+    "332": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            4
+        ]
+    },
+    "333": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Static_Init",
+            "tag",
+            "Init_Gravity"
+        ]
+    },
+    "334": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Static_Init",
+            "tag",
+            "Init_Color"
+        ]
+    },
+    "335": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Static_Init",
+            "tag",
+            "Init_Damage"
+        ]
+    },
+    "336": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Line_Mirror",
+            ""
+        ]
+    },
+    "337": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Line_Horizon",
+            ""
+        ]
+    },
+    "338": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_Waggle",
+            "tag",
+            24,
+            32,
+            "0",
+            "0"
+        ]
+    },
+    "339": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_Waggle",
+            "tag",
+            12,
+            32,
+            "0",
+            "0"
+        ]
+    },
+    "340": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Plane_Align",
+            1,
+            "0"
+        ],
+        "comment": "Slope front floor"
+    },
+    "341": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Plane_Align",
+            "0",
+            1
+        ],
+        "comment": "Slope front ceiling"
+    },
+    "342": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Plane_Align",
+            1,
+            1
+        ],
+        "comment": "Slope front floor and ceiling"
+    },
+    "343": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Plane_Align",
+            2,
+            "0"
+        ],
+        "comment": "Slope back floor"
+    },
+    "344": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Plane_Align",
+            "0",
+            2
+        ],
+        "comment": "Slope back ceiling"
+    },
+    "345": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Plane_Align",
+            2,
+            2
+        ],
+        "comment": "Slope back floor and ceiling"
+    },
+    "346": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Plane_Align",
+            2,
+            1
+        ],
+        "comment": "Slope b.f. and f.c."
+    },
+    "347": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Plane_Align",
+            1,
+            2
+        ],
+        "comment": "Slope f.f. and b.c."
+    },
+    "348": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Autosave",
+            ""
+        ]
+    },
+    "349": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Autosave",
+            ""
+        ]
+    },
+    "350": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Transfer_Heights",
+            "tag",
+            2
+        ],
+        "comment": "Just fake the floor"
+    },
+    "351": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Transfer_Heights",
+            "tag",
+            6
+        ],
+        "comment": "Just fake the floor and clip it too"
+    },
+    "352": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_CopyScrollertag",
+            1
+        ],
+        "comment": "copy ceiling scroller"
+    },
+    "353": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_CopyScrollertag",
+            2
+        ],
+        "comment": "copy floor scroller"
+    },
+    "354": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_CopyScrollertag",
+            6
+        ],
+        "comment": "copy carrying floor scroller"
+    },
+    "400": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            "0",
+            255
+        ]
+    },
+    "401": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            16,
+            255
+        ]
+    },
+    "402": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            32,
+            255
+        ]
+    },
+    "403": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            2,
+            2,
+            255
+        ]
+    },
+    "404": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            2,
+            2,
+            204
+        ]
+    },
+    "405": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            2,
+            2,
+            153
+        ]
+    },
+    "406": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            2,
+            2,
+            102
+        ]
+    },
+    "407": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            2,
+            2,
+            51
+        ]
+    },
+    "408": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            2,
+            2
+        ]
+    },
+    "409": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLine",
+            "lineid",
+            204
+        ],
+        "comment": "80% translucent"
+    },
+    "410": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLine",
+            "lineid",
+            153
+        ],
+        "comment": "60% translucent"
+    },
+    "411": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLine",
+            "lineid",
+            101
+        ],
+        "comment": "40% translucent"
+    },
+    "412": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "TranslucentLine",
+            "lineid",
+            50
+        ],
+        "comment": "20% translucent"
+    },
+    "413": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            8,
+            255
+        ]
+    },
+    "414": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            8,
+            204
+        ]
+    },
+    "415": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            8,
+            153
+        ]
+    },
+    "416": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            8,
+            102
+        ]
+    },
+    "417": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Sector_Set3DFloortag",
+            1,
+            8,
+            51
+        ]
+    },
+    "422": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Right",
+            64
+        ]
+    },
+    "423": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Up",
+            64
+        ]
+    },
+    "424": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Down",
+            64
+        ]
+    },
+    "425": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Both",
+            "0",
+            64,
+            "0",
+            "0",
+            64
+        ]
+    },
+    "426": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Both",
+            "0",
+            64,
+            "0",
+            64,
+            "0"
+        ]
+    },
+    "427": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Both",
+            "0",
+            "0",
+            64,
+            "0",
+            64
+        ]
+    },
+    "428": {
+        "flags": [
+            "0"
+        ],
+        "udmf": [
+            "Scroll_Texture_Both",
+            "0",
+            "0",
+            64,
+            64,
+            "0"
+        ]
+    },
+    "434": {
+        "flags": [
+            "USE"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            2
+        ]
+    },
+    "435": {
+        "flags": [
+            "USE",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            2
+        ]
+    },
+    "436": {
+        "flags": [
+            "WALK"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            2
+        ]
+    },
+    "437": {
+        "flags": [
+            "WALK",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            2
+        ]
+    },
+    "438": {
+        "flags": [
+            "SHOOT"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            2
+        ]
+    },
+    "439": {
+        "flags": [
+            "SHOOT",
+            "REP"
+        ],
+        "udmf": [
+            "Floor_RaiseByValue",
+            "tag",
+            8,
+            2
+        ]
+    }
+}

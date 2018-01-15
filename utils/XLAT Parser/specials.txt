@@ -1,0 +1,181 @@
+
+/****** BOOM generalized linetypes ******
+ *
+ * The general structure for a BOOM generalized translator is
+ *
+ *  [ZDoom Line Special] (first line type for this, last line type for this)
+ *  {
+ *     one or more stores
+ *  }
+ *
+ * Stores have the form:
+ *
+ *  <destination> <op> <value>
+ *
+ * <destination> can be arg2, arg3, arg4, arg5, or flags. Arg1 will always
+ *    be set to the line's tag, so it cannot be specified in a store.
+ *
+ * <op> can be |= or =. If it is =, then <value> is simply stored in
+ *    <destination>. If it is |=, then <value> is logically or'ed with
+ *    whatever is already in <destination>.
+ *
+ * <value> can be either a simple number, which will always be stored in
+ *    <destination> based on <op>, or it can be a list of numbers chosen
+ *    by using a bitmask. When using a list, this form is used:
+ *
+ *       mask [choices]
+ *
+ *    There can be at most 15 choices in a list. (If you need more, use
+ *    more than one list.) Each choice is separated from the other choices
+ *    by a comma. Each individual choice has the form:
+ *
+ *       <selector> : <value>
+ *
+ *    When ZDoom processes one of these lists, the linetype is logically
+ *    and'ed with the mask. It then searches the list for a selector that
+ *    matches the result of this operation. If it finds one, the selector's
+ *    corresponding value is used as the value for <op> to store into
+ *    <destination>.
+ */
+
+
+// Generalized crusher (tag, dnspeed, upspeed, silent, damage)
+[Generic_Crusher] (0x2f80, 0x2fff)
+{
+	flags |= 0x0020 [0x0020 : MONST]
+	arg2 = 0x0018  [0x0000 : C_SLOW,
+			0x0008 : C_NORMAL,
+			0x0010 : C_FAST,
+			0x0018 : C_TURBO]
+	arg3 = 0x0018  [0x0000 : C_SLOW,
+			0x0008 : C_NORMAL,
+			0x0010 : C_FAST,
+			0x0018 : C_TURBO]
+	arg4 = 0x0040  [0x0040 : 1]
+	arg5 = 10
+}
+
+// Generalized stairs (tag, speed, step, dir/igntxt, reset)
+[Generic_Stairs] (0x3000, 0x33ff)
+{
+	flags |= 0x0020 [0x0020 : MONST]
+	arg2 = 0x0018  [0x0000 : ST_SLOW,
+			0x0008 : ST_NORMAL,
+			0x0010 : ST_FAST,
+			0x0018 : ST_TURBO]
+	arg3 = 0x00c0  [0x0000 : 4,
+			0x0040 : 8,
+			0x0080 : 16,
+			0x00c0 : 24]
+	arg4 = 0x0300  [0x0100 : 1,
+			0x0200 : 2,
+			0x0300 : 3]
+}
+
+// Generalized lift (tag, speed, delay, target, height)
+[Generic_Lift] (0x3400, 0x37ff)
+{
+	flags |= 0x0020 [0x0020 : MONST]
+	arg2 = 0x0018  [0x0000 : P_SLOW*2,
+			0x0008 : P_NORMAL*2,
+			0x0010 : P_FAST*2,
+			0x0018 : P_TURBO*2]
+	arg3 = 0x00c0  [0x0000 : 8,
+			0x0040 : 24,
+			0x0080 : 40,
+			0x00c0 : 80]
+	arg4 = 0x0300  [0x0000 : 1,
+			0x0100 : 2,
+			0x0200 : 3,
+			0x0300 : 4]
+}
+
+// Generalized locked door (tag, speed, kind, delay, lock)
+[Generic_Door] (0x3800, 0x3bff)
+{
+	arg2 = 0x0018  [0x0000 : D_SLOW,
+			0x0008 : D_NORMAL,
+			0x0010 : D_FAST,
+			0x0018 : D_TURBO]
+	arg3 = 0x0020  [0x0020 : 1]
+	arg4 = 0x0020  [0 : 34]
+	arg5 = 0x01c0  [0x0000 : AnyKey,
+			0x0040 : RCard,
+			0x0080 : BCard,
+			0x00c0 : YCard,
+			0x0100 : RSkull,
+			0x0140 : BSkull,
+			0x0180 : YSkull,
+			0x01c0 : AllKeys]
+	arg5 |= 0x0200 [0x0200 : CardIsSkull]
+}
+
+// Generalized door (tag, speed, kind, delay, lock)
+[Generic_Door] (0x3c00, 0x3fff)
+{
+	flags |= 0x0080 [0x0080 : MONST]
+	arg2 = 0x0018  [0x0000 : D_SLOW,
+			0x0008 : D_NORMAL,
+			0x0010 : D_FAST,
+			0x0018 : D_TURBO]
+	arg3 = 0x0060  [0x0000 : 64,
+			0x0020 : 65,
+			0x0040 : 66,
+			0x0060 : 67]
+	arg4 = 0x0300  [0x0000 : 8,
+			0x0100 : 34,
+			0x0200 : 69,
+			0x0300 : 240]
+}
+
+// Generalized ceiling (tag, speed, height, target, change/model/direct/crush)
+[Generic_Ceiling] (0x4000, 0x5fff)
+{
+	flags |= 0x0c20 [0x0020 : MONST]
+	arg2 = 0x0018 [0x0000 : F_SLOW,
+			0x0008 : F_NORMAL,
+			0x0010 : F_FAST,
+			0x0018 : F_TURBO]
+	arg3 = 0x0380 [0x0300 : 24,
+			0x0380 : 32]
+	arg4 = 0x0380 [0x0000 : 1,
+			0x0080 : 2,
+			0x0100 : 3,
+			0x0180 : 4,
+			0x0200 : 5,
+			0x0280 : 6]
+	arg5 = 0x0c00 [0x0000 : 0,
+			0x0400 : 1,
+			0x0800 : 2,
+			0x0c00 : 3]
+	arg5 |= 0x0060 [0x0020 : 4,
+			 0x0040 : 8,
+			 0x0060 : 12]
+	arg5 |= 0x1000 [0x1000 : 16]
+}
+
+// Generalized floor (tag, speed, height, target, change/model/direct/crush)
+[Generic_Floor] (0x6000, 0x7fff)
+{
+	flags |= 0x0c20 [0x0020 : MONST]
+	arg2 = 0x0018 [0x0000 : F_SLOW,
+			0x0008 : F_NORMAL,
+			0x0010 : F_FAST,
+			0x0018 : F_TURBO]
+	arg3 = 0x0380 [0x0300 : 24,
+			0x0380 : 32]
+	arg4 = 0x0380 [0x0000 : 1,
+			0x0080 : 2,
+			0x0100 : 3,
+			0x0180 : 4,
+			0x0200 : 5,
+			0x0280 : 6]
+	arg5 = 0x0c00 [0x0000 : 0,
+			0x0400 : 1,
+			0x0800 : 2,
+			0x0c00 : 3]
+	arg5 |= 0x0060 [0x0020 : 4,
+			 0x0040 : 8,
+			 0x0060 : 12]
+	arg5 |= 0x1000 [0x1000 : 16]
+}
