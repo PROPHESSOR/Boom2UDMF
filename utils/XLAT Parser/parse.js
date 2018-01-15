@@ -46,8 +46,8 @@ dataParser.parse({
 
 				action.udmf[i] = actionIDs[act]
 					|| Constants[act]
-					|| Number(act)
 					|| act;
+				if (!isNaN(Number(act))) action.udmf[i] = Number(act);
 			}
 
 			// Remove comments artifacts
