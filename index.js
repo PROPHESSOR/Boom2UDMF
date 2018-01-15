@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-const BoomParser = require('./BoomParser');
+const MapParser = require('./MapParser');
 
 const [
 	Linedef,
@@ -27,7 +27,7 @@ const SIDEDEFS = 'input/SIDEDEFS.lmp';
 const TEXTMAP = 'output/TEXTMAP';
 
 function parseVertexes() {
-	const vertexes = BoomParser.getVertexes(VERTEXES);
+	const vertexes = MapParser.getVertexes(VERTEXES);
 
 	const out = [];
 
@@ -48,7 +48,7 @@ function parseVertexes() {
 }
 
 function parseThings() {
-	const things = BoomParser.getThings(THINGS);
+	const things = MapParser.getThings(THINGS);
 
 	const out = [];
 
@@ -69,7 +69,7 @@ function parseThings() {
 }
 
 function parseSectors() {
-	const sectors = BoomParser.getSectors(SECTORS);
+	const sectors = MapParser.getSectors(SECTORS);
 
 	const out = [];
 
@@ -90,7 +90,7 @@ function parseSectors() {
 }
 
 function parseLinedefs() {
-	const linedefs = BoomParser.getLinedefs(LINEDEFS);
+	const linedefs = MapParser.getLinedefs(LINEDEFS);
 
 	const out = [];
 
@@ -111,7 +111,7 @@ function parseLinedefs() {
 }
 
 function parseSidedefs() {
-	const sidedefs = BoomParser.getSides(SIDEDEFS);
+	const sidedefs = MapParser.getSides(SIDEDEFS);
 
 	const out = [];
 
