@@ -22,7 +22,8 @@ class Sector {
 
 		for (const key in this) {
 			if (key[0] === '_') continue;
-			out += `${key}=${this[key]};\n`;
+            if(typeof this[key] === 'string') out += `${key}="${this[key]}";\n`;
+            else out += `${key}=${this[key]};\n`;
 		}
 
 		out += '}\n';
