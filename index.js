@@ -122,7 +122,7 @@ function parseLinedefs() {
 			'arg5': boom2udmf.arg5
 		};
 
-		out.push(new Linedef(i, linedef.v1, linedef.v2, boom2udmf.UDMFflags, boom2udmf.UDMFaction, attributes, linedef.front, linedef.back, {'flag': linedef.flags}));
+		out.push(new Linedef(i, linedef.v1, linedef.v2, boom2udmf.UDMFflags, boom2udmf.UDMFaction, attributes, linedef.front, linedef.back, { 'flag': linedef.flags }));
 	}
 
 	let outstring = '// LineDefs\n';

@@ -10,7 +10,7 @@ class Thing {
 		this.y = y;
 		this.angle = angle;
 		this.type = type;
-        
+
         for (const flag in flags) {
             this[flag] = Boolean(flags[flag]);
         }

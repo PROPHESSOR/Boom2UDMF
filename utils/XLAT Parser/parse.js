@@ -56,7 +56,7 @@ dataParser.parse({
 
 			console.dir(action);
 
-			const {boom} = action;
+			const { boom } = action;
 
 			Reflect.deleteProperty(action, 'boom');
 
