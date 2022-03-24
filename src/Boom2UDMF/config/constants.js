@@ -1,15 +1,13 @@
-// Copyright (c) 2018 PROPHESSOR
+// Copyright (c) 2018-2022 PROPHESSOR
 //
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
-
-"use strict";
 
 /* eslint quotes:["error", "double"] */
 
 // FIXME: 0x01 - не заполненные поля
 
-module.exports = {
+export const Constants = {
 	"FLAGS": {
 		"Things": {
 			"EASY":	0x0001,

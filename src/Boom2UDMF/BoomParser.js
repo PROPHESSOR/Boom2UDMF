@@ -1,15 +1,11 @@
-// Copyright (c) 2018 PROPHESSOR
+// Copyright (c) 2018-2022 PROPHESSOR
 //
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-'use strict';
+import { lineActionMap, Constants } from './config';
 
-const { lineActionMap, Constants } = require('./config');
-
-class BoomParser {}
-
-BoomParser.Thing = class {
+export class Thing {
     static getUDMFflags(flag) {
         const { FLAGS } = Constants;
 
@@ -38,7 +34,7 @@ BoomParser.Thing = class {
     // TODO: Write me
 };
 
-BoomParser.Action = class {
+export class Action {
     constructor(boomAction, otherData = {}) {
         this.boomAction = boomAction;
         this.actionMap = lineActionMap[String(boomAction)] || BoomParser.Action.emptyAction;
@@ -137,5 +133,3 @@ BoomParser.Action = class {
         };
     }
 };
-
-module.exports = BoomParser;

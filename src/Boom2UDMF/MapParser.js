@@ -1,13 +1,11 @@
-// Copyright (c) 2018 PROPHESSOR
+// Copyright (c) 2018-2022 PROPHESSOR
 //
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-'use strict';
-
 const fs = require('fs');
 
-class WadParser {
+export class MapParser {
 	constructor(map) {
 		this.map = map;
 
@@ -153,4 +151,4 @@ class WadParser {
 	}
 }
 
-module.exports = new WadParser();
+export default new MapParser();
