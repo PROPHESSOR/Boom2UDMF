@@ -23,6 +23,8 @@
 
     <button @click="convert">Convert</button>
 
+    {{stages}}
+
     <textarea v-model="output" cols="30" rows="10"></textarea>
   </div>
 </template>
@@ -30,6 +32,7 @@
 <script>
 import { readByteToolsBufferFromInput } from './Boom2UDMF/utils/BrowserFile';
 import { generateUdmf } from './Boom2UDMF';
+import { setImmediate } from './Boom2UDMF/utils';
 
 export default {
   name: 'App',
@@ -39,11 +42,13 @@ export default {
 
   data() {
     return {
+      worker: null,
       things: null,
       linedefs: null,
       sidedefs: null,
       sectors: null,
       vertexes: null,
+      stages: '',
       output: 'Press Convert to get UDMF code',
     };
   },
@@ -89,11 +94,16 @@ export default {
       this.vertexes = buffer;
     },
 
-    convert() {
+    async displayStage(stage) {
+      this.stages += `${stage} | `;
+      await setImmediate();
+    },
+
+    async convert() {
       if (!(this.things && this.vertexes && this.sidedefs && this.linedefs && this.sectors)) { return alert('Not all files specified!'); }
 
-      this.output = generateUdmf(
-        this.things, this.vertexes, this.linedefs, this.sidedefs, this.sectors,
+      this.output = await generateUdmf(
+        this.things, this.vertexes, this.linedefs, this.sidedefs, this.sectors, this.displayStage,
       );
     },
   },

@@ -45,7 +45,8 @@
       "no-use-before-define": "off",
       "max-classes-per-file": "off",
       "no-bitwise": "off",
-      "consistent-return": "off"
+      "consistent-return": "off",
+      "no-unused-vars": "warn"
     }
   },
   "browserslist": [
