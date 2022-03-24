@@ -5,15 +5,13 @@ const [
 	Sector,
 	Thing,
 	Sidedef,
-	Vertex,
-	MapParser
+	Vertex
 ] = [
-	require('../structures/linedef'),
-	require('../structures/sector'),
-	require('../structures/thing'),
-	require('../structures/sidedef'),
-	require('../structures/vertex'),
-	require('../MapParser')
+	require('../src/Boom2UDMF/structures/linedef'),
+	require('../src/Boom2UDMF/structures/sector'),
+	require('../src/Boom2UDMF/structures/thing'),
+	require('../src/Boom2UDMF/structures/sidedef'),
+	require('../src/Boom2UDMF/structures/vertex')
 ];
 
 console.log((new Vertex(0, 5, -5)).toString());
