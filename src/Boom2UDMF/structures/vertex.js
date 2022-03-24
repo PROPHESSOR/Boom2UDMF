@@ -30,8 +30,6 @@ export class Vertex {
 	}
 }
 
-module.exports = Vertex;
-
 /*
 vertex
    {

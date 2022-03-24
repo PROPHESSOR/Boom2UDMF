@@ -5,9 +5,8 @@
 
 import { Linedef, Sector, Thing, Sidedef, Vertex } from './structures';
 import ByteTools from './utils/ByteTools';
-
-const MapParser = require('./MapParser');
-const BoomParser = require('./BoomParser');
+import MapParser from './MapParser';
+import * as BoomParser from './BoomParser';
 
 /**
  * 

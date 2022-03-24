@@ -36,8 +36,6 @@ export class Sector {
 	}
 }
 
-module.exports = Sector;
-
 /*
 sector
    {

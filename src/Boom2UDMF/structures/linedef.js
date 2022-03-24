@@ -58,8 +58,6 @@ export class Linedef {
 	}
 }
 
-module.exports = Linedef;
-
 /*
 linedef
    {

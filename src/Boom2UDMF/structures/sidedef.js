@@ -36,8 +36,6 @@ export class Sidedef {
 	}
 }
 
-module.exports = Sidedef;
-
 /*
 sidedef
    {

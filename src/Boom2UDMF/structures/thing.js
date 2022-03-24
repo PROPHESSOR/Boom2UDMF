@@ -38,8 +38,6 @@ export class Thing {
 	}
 }
 
-module.exports = Thing;
-
 /*
 thing
    {
