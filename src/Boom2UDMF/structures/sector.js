@@ -1,7 +1,11 @@
-'use strict';
+/**
+ * Copyright (c) 2018-2022 PROPHESSOR
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
 
-
-class Sector {
+export class Sector {
 
 	constructor(_id, floor, ceiling, floortex, ceilingtex, light, special, tag, other = {}) {
 		this._id = _id;
@@ -31,8 +35,6 @@ class Sector {
 		return out;
 	}
 }
-
-module.exports = Sector;
 
 /*
 sector

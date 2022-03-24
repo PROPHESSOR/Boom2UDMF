@@ -1,7 +1,11 @@
-'use strict';
+/**
+ * Copyright (c) 2018-2022 PROPHESSOR
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
 
-
-class Linedef {
+export class Linedef {
 
 	/** Create new Linedef
 	 * @constructor
@@ -53,8 +57,6 @@ class Linedef {
 		return out;
 	}
 }
-
-module.exports = Linedef;
 
 /*
 linedef

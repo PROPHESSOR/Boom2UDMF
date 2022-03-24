@@ -1,7 +1,11 @@
-'use strict';
+/**
+ * Copyright (c) 2018-2022 PROPHESSOR
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
 
-
-class Thing {
+export class Thing {
 
 	constructor(_id, x, y, angle, type, flags = {}, other = {}) {
 		this._id = _id;
@@ -33,8 +37,6 @@ class Thing {
 		return out;
 	}
 }
-
-module.exports = Thing;
 
 /*
 thing

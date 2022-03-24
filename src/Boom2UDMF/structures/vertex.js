@@ -1,7 +1,11 @@
-'use strict';
+/**
+ * Copyright (c) 2018-2022 PROPHESSOR
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
 
-
-class Vertex {
+export class Vertex {
 
 	constructor(_id, x, y, other = {}) {
 		this._id = _id;
@@ -25,8 +29,6 @@ class Vertex {
 		return out;
 	}
 }
-
-module.exports = Vertex;
 
 /*
 vertex

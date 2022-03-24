@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+export const actionIDs = {
 	'-': 0, // No special
 	'Polyobj_StartLine': 1,
 	'Polyobj_RotateLeft': 2,

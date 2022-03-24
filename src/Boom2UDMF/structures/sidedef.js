@@ -1,7 +1,11 @@
-'use strict';
+/**
+ * Copyright (c) 2018-2022 PROPHESSOR
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
 
-
-class Sidedef {
+export class Sidedef {
 
 	constructor(_id, offsetx, offsety, uppertex, lowertex, middletex, sector, other = {}) {
 		this._id = _id;
@@ -31,8 +35,6 @@ class Sidedef {
 		return out;
 	}
 }
-
-module.exports = Sidedef;
 
 /*
 sidedef
