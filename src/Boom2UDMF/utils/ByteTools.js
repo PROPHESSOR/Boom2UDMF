@@ -42,7 +42,7 @@ export default class ByteTools {
 
     // read
 
-    readString(length = Infinity) {
+    readString(length = Infinity, trimZeroEnding = true) {
         let string = '';
 
         for (let i = 0; i < length; i++) {
@@ -53,6 +53,8 @@ export default class ByteTools {
             string += String.fromCharCode(char);
         }
 
+        if (trimZeroEnding) return string.replace(/\x00/g, '');
+        
         return string;
     }
 
