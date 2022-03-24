@@ -5,17 +5,27 @@
       <input type="file" @change="onWadFileChange">
     </label>
 
-    <button @click="convert">Convert</button>
+    <button @click="getMaps">Read maps</button>
+
+    <template v-if="maps.length">
+      <select v-model="map">
+        <option :value="null">Select a map</option>
+        <option v-for="map in maps" :key="map.index" :value="map.index">{{map.name}}</option>
+      </select>
+
+      <button @click="convert">Convert</button>
+
+      <textarea v-model="output" cols="30" rows="10"></textarea>
+    </template>
 
     {{stages}}
 
-    <textarea v-model="output" cols="30" rows="10"></textarea>
   </div>
 </template>
 
 <script>
 import { readByteToolsBufferFromInput } from './Boom2UDMF/utils/BrowserFile';
-import { boom2Udmf, generateUdmf } from './Boom2UDMF';
+import { boom2Udmf, parseMaps } from './Boom2UDMF';
 import { setImmediate } from './Boom2UDMF/utils';
 
 export default {
@@ -27,8 +37,11 @@ export default {
   data() {
     return {
       wad: null,
+      wadParser: null,
       stages: '',
       output: 'Press Convert to get UDMF code',
+      maps: [],
+      map: null,
     };
   },
 
@@ -46,10 +59,16 @@ export default {
       await setImmediate();
     },
 
-    async convert() {
+    async getMaps() {
       if (!this.wad) return alert('No WAD file specified!');
 
-      this.output = await boom2Udmf(this.wad, this.displayStage);
+      [this.wadParser, this.maps] = await parseMaps(this.wad, this.displayStage);
+    },
+
+    async convert() {
+      if (this.map === null) return alert('Please select the map!');
+
+      this.output = await boom2Udmf(this.wadParser, this.map, this.displayStage);
 
       this.wad = null;
     },

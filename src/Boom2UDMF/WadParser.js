@@ -15,12 +15,14 @@ export class WadLump {
    * @param {number} pos
    * @param {number} size
    * @param {string} name
+   * @param {number} index
    */
-  constructor(wadBuffer, pos, size, name) {
+  constructor(wadBuffer, pos, size, name, index) {
     this.wadBuffer = wadBuffer;
     this.pos = pos;
     this.size = size;
     this.name = name;
+    this.index = index;
   }
 
   read() {
@@ -68,7 +70,7 @@ export class WadParser {
       const size = this.buffer.readUInt32();
       const name = this.buffer.readString(8);
 
-      this.lumps.push(new WadLump(this.buffer, start, size, name));
+      this.lumps.push(new WadLump(this.buffer, start, size, name, i));
     }
 
     console.log(`Parsed ${this.lumps.length} lumps`);
@@ -78,10 +80,43 @@ export class WadParser {
 
   /**
    *
+   * @param {WadLump[]} lumps
+   * @param {string} name
+   */
+  static getLumpsByName(lumps, name) {
+    return lumps.filter((x) => x.name === name);
+  }
+
+  /**
+   *
    * @param {string} name
    * @returns {WadLump[]}
    */
   getLumpsByName(name) {
-    return this.lumps.filter((x) => x.name === name);
+    return WadParser.getLumpsByName(this.lumps, name);
+  }
+
+  getMaps() {
+    const REGEXP_MAP = /^(MAP\d+)|(E\dM\d)$/;
+
+    return this.lumps.filter((x) => REGEXP_MAP.test(x.name));
+  }
+
+  getMapLumps(index) {
+    const slice = this.lumps.slice(index);
+
+    const [THINGS] = WadParser.getLumpsByName(slice, 'THINGS');
+    const [LINEDEFS] = WadParser.getLumpsByName(slice, 'LINEDEFS');
+    const [SIDEDEFS] = WadParser.getLumpsByName(slice, 'SIDEDEFS');
+    const [VERTEXES] = WadParser.getLumpsByName(slice, 'VERTEXES');
+    const [SECTORS] = WadParser.getLumpsByName(slice, 'SECTORS');
+
+    return {
+      THINGS,
+      LINEDEFS,
+      SIDEDEFS,
+      VERTEXES,
+      SECTORS,
+    };
   }
 }

@@ -13,28 +13,41 @@ import { BoomParser } from './BoomParser';
 import ByteTools from './utils/ByteTools'; // For typings
 import { WadParser } from './WadParser';
 
-export async function boom2Udmf(wadBuffer, stage) {
+/**
+ *
+ * @param {ByteTools} wadBuffer
+ * @param {function} stage
+ * @returns {WadLump[]}
+ */
+export async function parseMaps(wadBuffer, stage) {
   await stage('Parsing WAD...');
   const wad = new WadParser(wadBuffer);
   await wad.parse();
   await stage(`Found ${wad.lumps.length} lumps!`);
 
-  const things = wad.getLumpsByName('THINGS');
-  const thingsBuffer = things[0].read();
+  const maps = wad.getMaps();
+  await stage(`Found ${maps.length} maps!`);
 
-  const vertexes = wad.getLumpsByName('VERTEXES');
-  const vertexesBuffer = vertexes[0].read();
+  return [wad, maps];
+}
 
-  const linedefs = wad.getLumpsByName('LINEDEFS');
-  const linedefsBuffer = linedefs[0].read();
+/**
+ *
+ * @param {WadParser} wadParser
+ * @param {number} mapIndex
+ * @param {function} stage
+ * @returns
+ */
+export async function boom2Udmf(wadParser, mapIndex, stage) {
+  const {
+    THINGS, VERTEXES, LINEDEFS, SIDEDEFS, SECTORS,
+  } = wadParser.getMapLumps(mapIndex);
 
-  const sidedefs = wad.getLumpsByName('SIDEDEFS');
-  const sidedefsBuffer = sidedefs[0].read();
-
-  const sectors = wad.getLumpsByName('SECTORS');
-  const sectorsBuffer = sectors[0].read();
-
-  await stage('Required lumps found! Ready for conversion!');
+  const thingsBuffer = THINGS.read();
+  const vertexesBuffer = VERTEXES.read();
+  const linedefsBuffer = LINEDEFS.read();
+  const sidedefsBuffer = SIDEDEFS.read();
+  const sectorsBuffer = SECTORS.read();
 
   return generateUdmf(
     thingsBuffer, vertexesBuffer, linedefsBuffer, sidedefsBuffer, sectorsBuffer, stage,
