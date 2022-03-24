@@ -1,5 +1,5 @@
 # Boom2UDMF
-Boom/vanilla to UDMF converter
+Boom/vanilla to UDMF converter (online)
 
 How to use it:
 
