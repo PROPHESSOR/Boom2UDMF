@@ -44,8 +44,8 @@ export default {
       sidedefs: null,
       sectors: null,
       vertexes: null,
-      output: 'Press Convert to get UDMF code'
-    }
+      output: 'Press Convert to get UDMF code',
+    };
   },
 
   methods: {
@@ -56,7 +56,7 @@ export default {
 
       this.things = buffer;
     },
-    
+
     async onLinedefsFileChange(e) {
       const buffer = await readByteToolsBufferFromInput(e.target);
 
@@ -64,7 +64,7 @@ export default {
 
       this.linedefs = buffer;
     },
-    
+
     async onSidedefsFileChange(e) {
       const buffer = await readByteToolsBufferFromInput(e.target);
 
@@ -72,7 +72,7 @@ export default {
 
       this.sidedefs = buffer;
     },
-    
+
     async onSectorsFileChange(e) {
       const buffer = await readByteToolsBufferFromInput(e.target);
 
@@ -80,7 +80,7 @@ export default {
 
       this.sectors = buffer;
     },
-    
+
     async onVertexesFileChange(e) {
       const buffer = await readByteToolsBufferFromInput(e.target);
 
@@ -88,16 +88,15 @@ export default {
 
       this.vertexes = buffer;
     },
-    
-    convert() {
-      if (!(this.things && this.vertexes && this.sidedefs && this.linedefs && this.sectors))
-        return alert('Not all files specified!');
 
-        this.output = generateUdmf(
-          this.things, this.vertexes, this.linedefs, this.sidedefs, this.sectors
-        );
+    convert() {
+      if (!(this.things && this.vertexes && this.sidedefs && this.linedefs && this.sectors)) { return alert('Not all files specified!'); }
+
+      this.output = generateUdmf(
+        this.things, this.vertexes, this.linedefs, this.sidedefs, this.sectors,
+      );
     },
-  }
+  },
 };
 </script>
 
