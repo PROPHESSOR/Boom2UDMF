@@ -34,14 +34,12 @@ export class MapParser {
 		const out = [];
 
 		for (let i = 0; i < buffer.length; i += 10) {
-			let j = i;
-
 			out.push({
-				'x': buffer.readInt16LE(j),
-				'y': buffer.readInt16LE(j += 2),
-				'angle': buffer.readInt16LE(j += 2),
-				'tid': buffer.readInt16LE(j += 2),
-				'flags': buffer.readInt16LE(j += 2)
+				'x': buffer.readInt16(),
+				'y': buffer.readInt16(),
+				'angle': buffer.readInt16(),
+				'tid': buffer.readInt16(),
+				'flags': buffer.readInt16()
 			});
 		}
 
@@ -61,8 +59,8 @@ export class MapParser {
 
 		for (let i = 0; i < buffer.length; i += 4) {
 			out.push({
-				'x': buffer.readInt16LE(i),
-				'y': buffer.readInt16LE(i + 2)
+				'x': buffer.readInt16(),
+				'y': buffer.readInt16()
 			});
 		}
 		this.vertexes = out;
@@ -93,13 +91,13 @@ export class MapParser {
 			let j = i;
 
 			out.push({
-				'v1': buffer.readInt16LE(j),
-				'v2': buffer.readInt16LE(j += 2),
-				'flags': buffer.readInt16LE(j += 2),
-				'action': buffer.readInt16LE(j += 2),
-				'tag': buffer.readInt16LE(j += 2),
-				'front': buffer.readInt16LE(j += 2),
-				'back': buffer.readInt16LE(j += 2)
+				'v1': buffer.readInt16(),
+				'v2': buffer.readInt16(),
+				'flags': buffer.readInt16(),
+				'action': buffer.readInt16(),
+				'tag': buffer.readInt16(),
+				'front': buffer.readInt16(),
+				'back': buffer.readInt16()
 			});
 		}
 		this.linedefs = out;
@@ -120,15 +118,14 @@ export class MapParser {
 			let j = i;
 
 			out.push({
-				'floor': buffer.readInt16LE(j),
-				'height': buffer.readInt16LE(j += 2),
-				'floortex': buffer.toString('ascii', j + 1, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
-				'ceiltex': buffer.toString('ascii', j + 2, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
-				'light': buffer.readInt16LE(j += 2),
-				'special': buffer.readInt16LE(j += 2),
-				'tag': buffer.readInt16LE(j += 2)
+				'floor': buffer.readInt16(),
+				'height': buffer.readInt16(),
+				'floortex': buffer.readString(8),
+				'ceiltex': buffer.readString(8),
+				'light': buffer.readInt16(),
+				'special': buffer.readInt16(),
+				'tag': buffer.readInt16()
 			});
-			if (out.length - 1 === 110) debugger;
 		}
 		this.sidedefs = out;
 		return out;
@@ -158,12 +155,12 @@ export class MapParser {
 
 
 			out.push({
-				'offsetx': buffer.readInt16LE(j),
-				'offsety': buffer.readInt16LE(j += 2),
-				'uppertex': buffer.toString('ascii', j + 1, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
-				'lowertex': buffer.toString('ascii', j + 2, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
-				'middletex': buffer.toString('ascii', j + 2, (j += 8) + 2).replace(/[^A-Za-z0-9_\\-]/g, ''),
-				'sector': buffer.readInt16LE(j += 2)
+				'offsetx': buffer.readInt16(),
+				'offsety': buffer.readInt16(),
+				'uppertex': buffer.readString(8),
+				'lowertex': buffer.readString(8),
+				'middletex': buffer.readString(8),
+				'sector': buffer.readInt16()
 			});
 		}
 		this.sectors = out;
