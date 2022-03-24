@@ -120,3 +120,107 @@ export class WadParser {
     };
   }
 }
+
+export class WadGeneratorLump {
+  /**
+   *
+   * @param {string} name
+   * @param {string} data
+   */
+  constructor(name, data) {
+    if (name.length > 8) throw new Error('Lump name must be <= 8 symbols');
+    this.name = name.padEnd(8, '\x00');
+    this.data = data;
+    this.dataEnc = new TextEncoder().encode(data);
+    this.offset = null;
+  }
+
+  /**
+   *
+   * @param {number} offset
+   */
+  setOffset(offset) {
+    this.offset = offset;
+  }
+}
+
+export class WadGenerator {
+  constructor() {
+    this.type = 'PWAD';
+    /**
+     * @type {WadGeneratorLump[]}
+     */
+    this.lumps = [];
+  }
+
+  /**
+   *
+   * @param {WadGeneratorLump} lump
+   */
+  addLump(lump) {
+    this.lumps.push(lump);
+  }
+
+  generate() {
+    const encoder = new TextEncoder();
+
+    const sizeHeader = 12;
+    const sizeDir = this.lumps.length * 16;
+    let sizeData = 0;
+
+    let offset = sizeHeader + sizeDir;
+
+    this.lumps.forEach((lump) => {
+      sizeData += lump.dataEnc.length;
+      lump.setOffset(offset);
+      offset += lump.dataEnc.length;
+    });
+
+    const arrayBuffer = new ArrayBuffer(sizeHeader + sizeDir + sizeData);
+    const buffer = new DataView(arrayBuffer);
+
+    offset = 0;
+
+    // Header
+    const type = encoder.encode(this.type);
+
+    type.forEach((byte) => {
+      buffer.setUint8(offset, byte);
+      offset += 1;
+    });
+
+    buffer.setUint32(offset, this.lumps.length, true);
+    offset += 4;
+    buffer.setUint32(offset, sizeHeader, true); // data position
+    offset += 4;
+
+    if (offset !== sizeHeader) throw new Error();
+
+    // Directory
+    this.lumps.forEach((lump) => {
+      const pos = lump.offset;
+      const size = lump.dataEnc.length;
+      const name = encoder.encode(lump.name);
+
+      buffer.setUint32(offset, pos, true);
+      offset += 4;
+      buffer.setUint32(offset, size, true);
+      offset += 4;
+      name.forEach((byte) => {
+        buffer.setUint8(offset, byte);
+        offset += 1;
+      });
+    });
+
+    if (offset !== sizeHeader + sizeDir) throw new Error();
+
+    this.lumps.forEach((lump) => {
+      lump.dataEnc.forEach((byte) => {
+        buffer.setUint8(offset, byte);
+        offset += 1;
+      });
+    });
+
+    return buffer;
+  }
+}

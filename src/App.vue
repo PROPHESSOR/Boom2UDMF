@@ -21,6 +21,7 @@
     <template v-if="output">
       <textarea v-model="output" cols="30" rows="10"></textarea>
 
+      <button @click="downloadWad">Download WAD</button>
       <button @click="downloadTextmap">Download TEXTMAP</button>
     </template>
 
@@ -33,6 +34,7 @@
 import { readByteToolsBufferFromInput } from './Boom2UDMF/utils/BrowserFile';
 import { boom2Udmf, parseMaps } from './Boom2UDMF';
 import { download, setImmediate } from './Boom2UDMF/utils';
+import { WadGenerator, WadGeneratorLump } from './Boom2UDMF/WadParser';
 
 export default {
   name: 'App',
@@ -82,6 +84,24 @@ export default {
 
     downloadTextmap() {
       download(this.output, 'TEXTMAP', '');
+    },
+
+    downloadWad() {
+      const wad = new WadGenerator();
+
+      const mapName = this.maps.find((x) => x.index === this.map).name;
+
+      const map = new WadGeneratorLump(mapName, '');
+      const textmap = new WadGeneratorLump('TEXTMAP', this.output);
+      const endmap = new WadGeneratorLump('ENDMAP', '');
+
+      wad.addLump(map);
+      wad.addLump(textmap);
+      wad.addLump(endmap);
+
+      const buffer = wad.generate();
+
+      download(buffer, `${mapName}.wad`, '');
     },
   },
 };
