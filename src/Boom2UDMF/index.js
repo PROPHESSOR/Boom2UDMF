@@ -36,7 +36,7 @@ function generateUdmf() {
 }
 
 function parseVertexes() {
-	const vertexes = MapParser.getVertexes(VERTEXES);
+	const vertexes = MapParser.getVertexes(fs.readFileSync(VERTEXES));
 
 	const out = [];
 
@@ -57,7 +57,7 @@ function parseVertexes() {
 }
 
 function parseThings() {
-	const things = MapParser.getThings(THINGS);
+	const things = MapParser.getThings(fs.readFileSync(THINGS));
 
 	const out = [];
 
@@ -78,7 +78,7 @@ function parseThings() {
 }
 
 function parseSectors() {
-	const sectors = MapParser.getSectors(SECTORS);
+	const sectors = MapParser.getSectors(fs.readFileSync(SECTORS));
 
 	const out = [];
 
@@ -99,7 +99,7 @@ function parseSectors() {
 }
 
 function parseLinedefs() {
-	const linedefs = MapParser.getLinedefs(LINEDEFS);
+	const linedefs = MapParser.getLinedefs(fs.readFileSync(LINEDEFS));
 
 	const out = [];
 
@@ -139,7 +139,7 @@ function parseLinedefs() {
 }
 
 function parseSidedefs() {
-	const sidedefs = MapParser.getSides(SIDEDEFS);
+	const sidedefs = MapParser.getSides(fs.readFileSync(SIDEDEFS));
 
 	const out = [];
 

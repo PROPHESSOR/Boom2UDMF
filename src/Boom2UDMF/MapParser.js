@@ -3,7 +3,7 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-const fs = require('fs');
+import ByteTools from './utils/ByteTools'; // type
 
 export class MapParser {
 	constructor(map) {
@@ -15,7 +15,12 @@ export class MapParser {
 		this.sidedefs = null;
 	}
 
-	getThings(file) {
+	/**
+	 * 
+	 * @param {ByteTools} buffer
+	 * @returns 
+	 */
+	getThings(buffer) {
 		if (this.things) return this.things;
 
 		/*
@@ -26,7 +31,6 @@ export class MapParser {
 		Bytes 8-9: Flags (short)
 		*/
 
-		const buffer = fs.readFileSync(file);
 		const out = [];
 
 		for (let i = 0; i < buffer.length; i += 10) {
@@ -45,10 +49,14 @@ export class MapParser {
 		return out;
 	}
 
-	getVertexes(file) {
+	/**
+	 *
+	 * @param {ByteTools} buffer
+	 * @returns
+	 */
+	getVertexes(buffer) {
 		if (this.vertexes) return this.vertexes;
 
-		const buffer = fs.readFileSync(file);
 		const out = [];
 
 		for (let i = 0; i < buffer.length; i += 4) {
@@ -61,7 +69,12 @@ export class MapParser {
 		return out;
 	}
 
-	getLinedefs(file) {
+	/**
+	 *
+	 * @param {ByteTools} buffer
+	 * @returns
+	 */
+	getLinedefs(buffer) {
 		if (this.linedefs) return this.linedefs;
 
 		/*
@@ -74,7 +87,6 @@ export class MapParser {
 		Bytes 12-13: Left SIDEDEF (short)
 		*/
 
-		const buffer = fs.readFileSync(file);
 		const out = [];
 
 		for (let i = 0; i < buffer.length; i += 14) {
@@ -94,10 +106,14 @@ export class MapParser {
 		return out;
 	}
 
-	getSectors(file) {
+	/**
+	 *
+	 * @param {ByteTools} buffer
+	 * @returns
+	 */
+	getSectors(buffer) {
 		if (this.sidedefs) return this.sidedefs;
 
-		const buffer = fs.readFileSync(file);
 		const out = [];
 
 		for (let i = 0; i < buffer.length; i += 26) {
@@ -118,7 +134,12 @@ export class MapParser {
 		return out;
 	}
 
-	getSides(file) {
+	/**
+	 *
+	 * @param {ByteTools} buffer
+	 * @returns
+	 */
+	getSides(buffer) {
 		if (this.sectors) return this.sectors;
 
 		/*
@@ -130,7 +151,6 @@ export class MapParser {
 		Bytes 28-29: Sector id (short)
 		*/
 
-		const buffer = fs.readFileSync(file);
 		const out = [];
 
 		for (let i = 0; i < buffer.length; i += 30) {
