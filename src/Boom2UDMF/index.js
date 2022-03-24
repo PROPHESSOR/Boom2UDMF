@@ -42,6 +42,9 @@ export async function boom2Udmf(wadParser, mapIndex, stage) {
   const {
     THINGS, VERTEXES, LINEDEFS, SIDEDEFS, SECTORS,
   } = wadParser.getMapLumps(mapIndex);
+  
+  if (!(THINGS && VERTEXES && LINEDEFS && SIDEDEFS && SECTORS))
+    throw new Error('Not a vanilla/boom map!');
 
   const thingsBuffer = THINGS.read();
   const vertexesBuffer = VERTEXES.read();
