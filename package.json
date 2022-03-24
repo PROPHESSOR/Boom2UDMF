@@ -46,7 +46,8 @@
       "max-classes-per-file": "off",
       "no-bitwise": "off",
       "consistent-return": "off",
-      "no-unused-vars": "warn"
+      "no-unused-vars": "warn",
+      "no-plusplus": "off"
     }
   },
   "browserslist": [

@@ -11,6 +11,35 @@ import { BoomParser } from './BoomParser';
 
 // eslint-disable-next-line
 import ByteTools from './utils/ByteTools'; // For typings
+import { WadParser } from './WadParser';
+
+export async function boom2Udmf(wadBuffer, stage) {
+  await stage('Parsing WAD...');
+  const wad = new WadParser(wadBuffer);
+  await wad.parse();
+  await stage(`Found ${wad.lumps.length} lumps!`);
+
+  const things = wad.getLumpsByName('THINGS');
+  const thingsBuffer = things[0].read();
+
+  const vertexes = wad.getLumpsByName('VERTEXES');
+  const vertexesBuffer = vertexes[0].read();
+
+  const linedefs = wad.getLumpsByName('LINEDEFS');
+  const linedefsBuffer = linedefs[0].read();
+
+  const sidedefs = wad.getLumpsByName('SIDEDEFS');
+  const sidedefsBuffer = sidedefs[0].read();
+
+  const sectors = wad.getLumpsByName('SECTORS');
+  const sectorsBuffer = sectors[0].read();
+
+  await stage('Required lumps found! Ready for conversion!');
+
+  return generateUdmf(
+    thingsBuffer, vertexesBuffer, linedefsBuffer, sidedefsBuffer, sectorsBuffer, stage,
+  );
+}
 
 /**
  *

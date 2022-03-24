@@ -1,24 +1,8 @@
 <template>
   <div class="tempform">
     <label>
-      THINGS ({{!!things}})
-      <input type="file" @change="onThingsFileChange">
-    </label>
-    <label>
-      LINEDEFS ({{!!linedefs}})
-      <input type="file" @change="onLinedefsFileChange">
-    </label>
-    <label>
-      SIDEDEFS ({{!!sidedefs}})
-      <input type="file" @change="onSidedefsFileChange">
-    </label>
-    <label>
-      SECTORS ({{!!sectors}})
-      <input type="file" @change="onSectorsFileChange">
-    </label>
-    <label>
-      VERTEXES ({{!!vertexes}})
-      <input type="file" @change="onVertexesFileChange">
+      WAD ({{!!wad}})
+      <input type="file" @change="onWadFileChange">
     </label>
 
     <button @click="convert">Convert</button>
@@ -31,7 +15,7 @@
 
 <script>
 import { readByteToolsBufferFromInput } from './Boom2UDMF/utils/BrowserFile';
-import { generateUdmf } from './Boom2UDMF';
+import { boom2Udmf, generateUdmf } from './Boom2UDMF';
 import { setImmediate } from './Boom2UDMF/utils';
 
 export default {
@@ -42,56 +26,19 @@ export default {
 
   data() {
     return {
-      worker: null,
-      things: null,
-      linedefs: null,
-      sidedefs: null,
-      sectors: null,
-      vertexes: null,
+      wad: null,
       stages: '',
       output: 'Press Convert to get UDMF code',
     };
   },
 
   methods: {
-    async onThingsFileChange(e) {
+    async onWadFileChange(e) {
       const buffer = await readByteToolsBufferFromInput(e.target);
 
       if (!buffer) return;
 
-      this.things = buffer;
-    },
-
-    async onLinedefsFileChange(e) {
-      const buffer = await readByteToolsBufferFromInput(e.target);
-
-      if (!buffer) return;
-
-      this.linedefs = buffer;
-    },
-
-    async onSidedefsFileChange(e) {
-      const buffer = await readByteToolsBufferFromInput(e.target);
-
-      if (!buffer) return;
-
-      this.sidedefs = buffer;
-    },
-
-    async onSectorsFileChange(e) {
-      const buffer = await readByteToolsBufferFromInput(e.target);
-
-      if (!buffer) return;
-
-      this.sectors = buffer;
-    },
-
-    async onVertexesFileChange(e) {
-      const buffer = await readByteToolsBufferFromInput(e.target);
-
-      if (!buffer) return;
-
-      this.vertexes = buffer;
+      this.wad = buffer;
     },
 
     async displayStage(stage) {
@@ -100,11 +47,11 @@ export default {
     },
 
     async convert() {
-      if (!(this.things && this.vertexes && this.sidedefs && this.linedefs && this.sectors)) { return alert('Not all files specified!'); }
+      if (!this.wad) return alert('No WAD file specified!');
 
-      this.output = await generateUdmf(
-        this.things, this.vertexes, this.linedefs, this.sidedefs, this.sectors, this.displayStage,
-      );
+      this.output = await boom2Udmf(this.wad, this.displayStage);
+
+      this.wad = null;
     },
   },
 };

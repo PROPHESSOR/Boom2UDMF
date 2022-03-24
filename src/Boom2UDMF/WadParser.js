@@ -1,0 +1,87 @@
+/**
+ * Copyright (c) 2022 PROPHESSOR
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+import ByteTools from './utils/ByteTools';
+import { setImmediate } from './utils';
+
+export class WadLump {
+  /**
+   *
+   * @param {ByteTools} wadBuffer
+   * @param {number} pos
+   * @param {number} size
+   * @param {string} name
+   */
+  constructor(wadBuffer, pos, size, name) {
+    this.wadBuffer = wadBuffer;
+    this.pos = pos;
+    this.size = size;
+    this.name = name;
+  }
+
+  read() {
+    return new ByteTools(new DataView(
+      this.wadBuffer.buffer.buffer.slice(this.pos, this.pos + this.size),
+    ));
+  }
+}
+
+export class WadParser {
+  /**
+   *
+   * @param {ByteTools} buffer
+   */
+  constructor(buffer) {
+    this.buffer = buffer;
+    this.type = null;
+    /**
+     * @type {WadLump[]}
+     */
+    this.lumps = null;
+  }
+
+  async parse() {
+    const type = this.buffer.readString(4);
+
+    if (!['IWAD', 'PWAD'].includes(type)) throw new Error('Not a WAD file!');
+
+    this.type = type;
+
+    const numLumps = this.buffer.readUInt32();
+
+    console.log(`Wad contains ${numLumps} lumps`);
+
+    const dirTableOffset = this.buffer.readUInt32();
+
+    console.log(`Wad table offset: ${dirTableOffset}`);
+
+    this.buffer.seek(dirTableOffset, 'START');
+
+    this.lumps = [];
+
+    for (let i = 0; i < numLumps; i++) {
+      const start = this.buffer.readUInt32();
+      const size = this.buffer.readUInt32();
+      const name = this.buffer.readString(8);
+
+      this.lumps.push(new WadLump(this.buffer, start, size, name));
+    }
+
+    console.log(`Parsed ${this.lumps.length} lumps`);
+
+    await setImmediate();
+  }
+
+  /**
+   *
+   * @param {string} name
+   * @returns {WadLump[]}
+   */
+  getLumpsByName(name) {
+    return this.lumps.filter((x) => x.name === name);
+  }
+}
