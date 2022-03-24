@@ -6,7 +6,7 @@
 import { Linedef, Sector, Thing, Sidedef, Vertex } from './structures';
 import ByteTools from './utils/ByteTools';
 import MapParser from './MapParser';
-import * as BoomParser from './BoomParser';
+import { BoomParser } from './BoomParser';
 
 /**
  * 
@@ -121,7 +121,7 @@ function parseLinedefs(buffer) {
 	for (const i in linedefs) {
 		const linedef = linedefs[i];
 
-		const boom2udmf = new BoomParser.Action(
+		const boom2udmf = new (BoomParser.Action)(
 			linedef.action, //
 			{
 				'flags': linedef.flags,

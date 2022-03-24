@@ -133,3 +133,8 @@ export class Action {
         };
     }
 };
+
+export const BoomParser = {
+    Thing,
+    Action
+};

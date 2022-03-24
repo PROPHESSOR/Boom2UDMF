@@ -9,6 +9,7 @@ export class MapParser {
 	constructor(map) {
 		this.map = map;
 
+		this.things = null;
 		this.vertexes = null;
 		this.linedefs = null;
 		this.sectors = null;
@@ -44,6 +45,7 @@ export class MapParser {
 		}
 
 		this.things = out;
+
 		return out;
 	}
 

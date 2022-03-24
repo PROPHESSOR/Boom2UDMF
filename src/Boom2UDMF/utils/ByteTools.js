@@ -17,6 +17,10 @@ export default class ByteTools {
     }
 
     // basics
+    get length() {
+        return this.buffer.byteLength;
+    }
+
     tell() {
         return this.offset;
     }
