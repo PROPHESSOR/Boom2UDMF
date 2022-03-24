@@ -194,7 +194,7 @@ export class WadGenerator {
     buffer.setUint32(offset, sizeHeader, true); // data position
     offset += 4;
 
-    if (offset !== sizeHeader) throw new Error();
+    if (offset !== sizeHeader) throw new Error('Wad generation error');
 
     // Directory
     this.lumps.forEach((lump) => {
@@ -212,7 +212,7 @@ export class WadGenerator {
       });
     });
 
-    if (offset !== sizeHeader + sizeDir) throw new Error();
+    if (offset !== sizeHeader + sizeDir) throw new Error('Wad generation error');
 
     this.lumps.forEach((lump) => {
       lump.dataEnc.forEach((byte) => {
